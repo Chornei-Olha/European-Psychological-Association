@@ -1,4 +1,3 @@
-import { FaFacebook, FaWhatsapp, FaLinkedin, FaEnvelope } from "react-icons/fa";
 import { Space_Grotesk } from "next/font/google";
 
 const spaceGrotesk = Space_Grotesk({ subsets: ["latin"], weight: "400" });
@@ -53,49 +52,6 @@ export default function Footer() {
               https://www.daheimbetreut.at/de/barrierefreiheit
             </a>
           </div>
-        </div>
-
-        {/* Ссылки на соцсети */}
-        <div className="flex justify-center space-x-10">
-          <a
-            href="https://www.facebook.com/profile.php?id=61558576380840"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-white hover:text-[#1C5107]"
-          >
-            <FaFacebook size={25} />
-          </a>
-          <a
-            href="https://wa.me/4368184242756"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-white hover:text-[#1C5107]"
-          >
-            <FaWhatsapp size={25} />
-          </a>
-          <a
-            href="https://www.linkedin.com/in/betreuung-zu-hause-a9b2b7355?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-white hover:text-[#1C5107]"
-          >
-            <FaLinkedin size={25} />
-          </a>
-          <a
-            href="mailto:office.betreuung24stunden@gmail.com"
-            className="text-white hover:text-[#1C5107]"
-          >
-            <FaEnvelope size={25} />
-          </a>
-        </div>
-
-        {/* Политика конфиденциальности */}
-        <div
-          className={`flex justify-center md:justify-end ${spaceGrotesk.className}`}
-        >
-          <a href="/privacy-policy" className="text-white hover:text-[#1C5107]">
-            Datenschutzrichtlinie
-          </a>
         </div>
       </div>
     </footer>
