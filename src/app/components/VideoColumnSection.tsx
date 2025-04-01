@@ -39,7 +39,9 @@ export default function TwoColumnSection() {
         />
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
           <p className="text-gray-600">
-            Дополнительный текст в правой колонке.
+            Освітні програми проходять незалежне експертне рецензування та
+            затверджуються Експертною радою Є-П-А та Вченими радами освітніх
+            партнерів.{" "}
           </p>
           <Image
             src="/image-right.jpg"
