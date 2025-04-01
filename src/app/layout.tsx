@@ -6,12 +6,12 @@ import Head from "next/head";
 // Импортируем шрифты
 const instrumentSans = Instrument_Sans({ subsets: ["latin"] });
 
-const SITE_NAME = "Solterra";
+const SITE_NAME = "EPA";
 const SITE_DESCRIPTION =
   "Suchen Sie nette, fleißige, erfahrene Betreuerinnen für Ihre Eltern? Wir bieten häusliche 24 Stunden Seniorenbetreuung und Haushalte in Österreich und Deutschland.";
 
 export const metadata: Metadata = {
-  title: "Solterra",
+  title: "EPA",
   description:
     "Suchen Sie nette, fleißige, erfahrene Betreuerinnen für Ihre Eltern? Wir bieten häusliche 24 Stunden Seniorenbetreuung und Haushalte in Österreich und Deutschland.",
 };
