@@ -4,7 +4,7 @@ import UnderHero from "@/app/components/UnderHero";
 import { TwoColumnSection } from "./components/TwoColumnSection";
 import Questions from "@/app/components/Questions";
 import BoardSlider from "@/app/components/BoardSlider";
-import Footer from "@/app/components/Footer";
+// import Footer from "@/app/components/Footer";
 import VideoColumnSection from "./components/VideoColumnSection";
 
 export default function Home() {
@@ -17,7 +17,7 @@ export default function Home() {
       <Questions />
       <BoardSlider />
       <VideoColumnSection />
-      <Footer />
+      {/* <Footer /> */}
     </main>
   );
 }
