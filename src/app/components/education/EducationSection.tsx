@@ -102,7 +102,7 @@ export default function EducationSection() {
                 {/* Первый блок */}
                 <div className="bg-[#F4F4F4] rounded-xl p-2 w-1/2 text-[16px] font-regular font-inter text-[#09234B]">
                   Уможливлює досягнення нового рівня у діяльності або
-                  започаткування кар'єри «з нуля».{" "}
+                  започаткування кар&apos;єри «з нуля».{" "}
                 </div>
 
                 {/* Второй блок - жирный текст по центру и кнопка */}

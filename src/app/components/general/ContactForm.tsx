@@ -10,36 +10,38 @@ export default function ContactForm() {
     consentInfo: false,
     consentPolicy: false,
   });
-  const [status, setStatus] = useState<string | null>(null); // Для статусу відправки
+
+  const [status, setStatus] = useState<string | null>(null);
 
   const isValid = formData.consentInfo && formData.consentPolicy;
 
-  const handleChange = (e: any) => {
-    const { name, value, type, checked } = e.target;
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    const { name, value, type } = e.target;
+    const isCheckbox = type === "checkbox";
+
     setFormData((prev) => ({
       ...prev,
-      [name]: type === "checkbox" ? checked : value,
+      [name]: isCheckbox ? (e.target as HTMLInputElement).checked : value,
     }));
   };
 
-  const handleSubmit = async (e: any) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-
-    // Показуємо статус "відправка..."
     setStatus("Надсилаємо ваше повідомлення...");
 
     try {
       const response = await fetch("/api/send-email", {
         method: "POST",
         headers: {
-          "Content-Type": "application/json", // Для правильного парсингу на сервері
+          "Content-Type": "application/json",
         },
         body: JSON.stringify(formData),
       });
 
       if (response.ok) {
         setStatus("Повідомлення надіслано!");
-        // Очищаємо форму після успішної відправки
         setFormData({
           name: "",
           email: "",
@@ -54,6 +56,7 @@ export default function ContactForm() {
         );
       }
     } catch (error) {
+      console.error("Помилка при надсиланні форми:", error);
       setStatus("Помилка при надсиланні. Спробуйте ще раз.");
     }
   };
@@ -81,7 +84,7 @@ export default function ContactForm() {
               onChange={handleChange}
               placeholder="Введіть Ваше ім'я"
               required
-              className="w-full border text-[16px] font-regular font-inter  border-gray-300 rounded px-4 py-2"
+              className="w-full border text-[16px] font-regular font-inter border-gray-300 rounded px-4 py-2"
             />
           </div>
 
@@ -110,7 +113,7 @@ export default function ContactForm() {
               onChange={handleChange}
               placeholder="Текст"
               required
-              className="w-full border text-[16px] font-regular font-inter  border-gray-300 rounded px-4 py-2 h-32 resize-none"
+              className="w-full border text-[16px] font-regular font-inter border-gray-300 rounded px-4 py-2 h-32 resize-none"
             />
           </div>
 
@@ -139,10 +142,10 @@ export default function ContactForm() {
             <button
               type="submit"
               disabled={!isValid}
-              className={`px-[40px] py-[10px] font-bold font-inter text-[16px] bg-black text-white rounded-3xl ${
+              className={`px-[40px] py-[10px] font-bold font-inter text-[16px] rounded-3xl ${
                 isValid
-                  ? "bg-black hover:bg-gray-800"
-                  : "bg-gray-400 cursor-not-allowed"
+                  ? "bg-black text-white hover:bg-gray-800"
+                  : "bg-gray-400 text-white cursor-not-allowed"
               }`}
             >
               НАДІСЛАТИ

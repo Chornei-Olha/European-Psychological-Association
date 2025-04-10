@@ -27,9 +27,16 @@ export async function POST(request: Request) {
     await transporter.sendMail(mailOptions);
     return NextResponse.json({ message: "Лист відправлено" });
   } catch (error) {
-    return NextResponse.json(
-      { message: "Помилка відправки листа", error: error.message },
-      { status: 500 }
-    );
+    if (typeof error === "object" && error !== null && "message" in error) {
+      return NextResponse.json(
+        { message: "Помилка відправки листа", error: (error as Error).message },
+        { status: 500 }
+      );
+    } else {
+      return NextResponse.json(
+        { message: "Помилка відправки листа", error: "Невідома помилка" },
+        { status: 500 }
+      );
+    }
   }
 }

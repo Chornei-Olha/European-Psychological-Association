@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 export default function Rules() {
   return (
     <section className="bg-[#D5E5FF] pt-0 pb-[50px] flex w-full relative text-white overflow-hidden">
@@ -49,7 +47,7 @@ export default function Rules() {
               строки, що встановлюються уповноваженим органом управління Є-П-А;{" "}
             </li>
             <li>
-              сприяти розширенню зв'язків та розповсюдженню інформації про
+              сприяти розширенню зв&apos;язків та розповсюдженню інформації про
               діяльність Є-П-А;
             </li>
             <li>
