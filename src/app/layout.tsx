@@ -1,19 +1,40 @@
 import type { Metadata } from "next";
-import { Instrument_Sans } from "next/font/google";
 import "./globals.css";
 import Head from "next/head";
 
 // Импортируем шрифты
-const instrumentSans = Instrument_Sans({ subsets: ["latin"] });
+import { DM_Sans, Inter, Reem_Kufi, Prosto_One } from "next/font/google";
 
+const dmSans = DM_Sans({
+  subsets: ["latin"],
+  variable: "--font-dm-sans",
+  display: "swap",
+});
+
+const inter = Inter({
+  subsets: ["latin", "cyrillic"],
+  variable: "--font-inter",
+  display: "swap",
+});
+
+const reemKufi = Reem_Kufi({
+  subsets: ["latin", "arabic"],
+  variable: "--font-reem",
+  display: "swap",
+});
+
+const prostoOne = Prosto_One({
+  weight: "400",
+  subsets: ["latin", "cyrillic"],
+  variable: "--font-prosto",
+  display: "swap",
+});
 const SITE_NAME = "EPA";
-const SITE_DESCRIPTION =
-  "Suchen Sie nette, fleißige, erfahrene Betreuerinnen für Ihre Eltern? Wir bieten häusliche 24 Stunden Seniorenbetreuung und Haushalte in Österreich und Deutschland.";
+const SITE_DESCRIPTION = "Європейська асоциація психологів";
 
 export const metadata: Metadata = {
   title: "EPA",
-  description:
-    "Suchen Sie nette, fleißige, erfahrene Betreuerinnen für Ihre Eltern? Wir bieten häusliche 24 Stunden Seniorenbetreuung und Haushalte in Österreich und Deutschland.",
+  description: "Європейська асоциація психологів",
 };
 
 export default function RootLayout({
@@ -22,7 +43,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html
+      lang="uk"
+      className={`${dmSans.variable} ${inter.variable} ${reemKufi.variable} ${prostoOne.variable}`}
+    >
       <Head>
         {/* HTML Meta Tags */}
         <title>{SITE_NAME}</title>
@@ -32,7 +56,7 @@ export default function RootLayout({
         <meta property="og:title" content={SITE_NAME} />
         <meta property="og:description" content={SITE_DESCRIPTION} />
       </Head>
-      <body className={`${instrumentSans.className}`}>{children}</body>
+      <body>{children}</body>
     </html>
   );
 }

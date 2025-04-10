@@ -2,9 +2,9 @@ import Image from "next/image";
 
 export default function Questions() {
   return (
-    <section className="relative w-full h-[500px] flex items-center justify-center text-center text-white">
+    <section className="relative w-full ml-auto mr-auto h-[500px] flex justify-center pt-[50px] text-center text-white">
       {/* Фоновое изображение */}
-      <div className="absolute inset-0 w-full h-full rounded-[20px] overflow-hidden">
+      <div>
         <Image
           src="/assets/back.png"
           alt="Background"
@@ -17,15 +17,14 @@ export default function Questions() {
 
       {/* Контент */}
       <div className="relative z-10 max-w-7xl px-6">
-        <h1 className="text-4xl font-bold">ЯК СТАТИ ЧЛЕНОМ ЄПА?</h1>
-        <p className="mt-4 text-lg">
+        <h1 className="text-[56px] font-dm font-medium text-black">
+          ЯК СТАТИ ЧЛЕНОМ ЄПА?
+        </h1>
+        <p className="mt-[25px] text-[20px] font-inter font-regular text-black">
           До ЕПА можуть приєднуватися фізичні особи, прийом яких до складу
           членів Є-П-А здійснюється на підставі рішення Президента, що
           приймається за результатами розгляду особистої заяви особи.{" "}
         </p>
-        <button className="mt-6 px-6 py-3 bg-black hover:bg-blue-700 text-white rounded-lg transition">
-          ДОКЛАДНІШЕ
-        </button>
       </div>
     </section>
   );

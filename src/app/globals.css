@@ -1,11 +1,14 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
-@custom-variant dark (&:is(.dark *));
+@tailwindcss preflight;
+@tailwind utilities;
 
 @theme {
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-dm: var(--font-dm);
+  --font-inter: var(--font-inter);
+  --font-reem: var(--font-reem);
+  --font-prosto: var(--font-prosto);
 }
 
 :root {

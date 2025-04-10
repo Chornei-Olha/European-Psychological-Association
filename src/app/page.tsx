@@ -1,11 +1,13 @@
-import Header from "@/app/components/Header";
-import HeroSection from "@/app/components/HeroSection";
-import UnderHero from "@/app/components/UnderHero";
-import { TwoColumnSection } from "./components/TwoColumnSection";
-import Questions from "@/app/components/Questions";
-import BoardSlider from "@/app/components/BoardSlider";
-// import Footer from "@/app/components/Footer";
-import VideoColumnSection from "./components/VideoColumnSection";
+import Header from "@/app/components/general/Header";
+import HeroSection from "@/app/components/general/HeroSection";
+import UnderHero from "@/app/components/general/UnderHero";
+import TwoColumnSection from "./components/general/TwoColumnSection";
+import Questions from "@/app/components/general/Questions";
+import BoardSlider from "@/app/components/general/BoardSlider";
+import VideoColumnSection from "./components/general/VideoColumnSection";
+import TypesCabinets from "./components/general/TypesCabinets";
+import ContactForm from "./components/general/ContactForm";
+import Footer from "@/app/components/general/Footer";
 
 export default function Home() {
   return (
@@ -17,7 +19,9 @@ export default function Home() {
       <Questions />
       <BoardSlider />
       <VideoColumnSection />
-      {/* <Footer /> */}
+      <TypesCabinets />
+      <ContactForm />
+      <Footer />
     </main>
   );
 }

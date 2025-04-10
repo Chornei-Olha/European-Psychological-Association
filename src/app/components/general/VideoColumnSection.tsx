@@ -3,31 +3,34 @@
 import Image from "next/image";
 import dynamic from "next/dynamic";
 
-const VideoPlayer = dynamic(() => import("@/app/components/VideoPlayer"), {
-  ssr: false,
-});
+const VideoPlayer = dynamic(
+  () => import("@/app/components/general/VideoPlayer"),
+  {
+    ssr: false,
+  }
+);
 
 export default function TwoColumnSection() {
   return (
-    <section className="container mx-auto py-12 grid grid-cols-1 md:grid-cols-2 gap-8 px-4">
+    <section className="container mx-auto py-12 grid grid-cols-1 md:grid-cols-2 gap-8 px-6">
       {/* Левая колонка */}
       <div className="flex flex-col justify-start">
-        <h2 className="text-3xl font-bold mb-4">Освіта</h2>
-        <p className="text-gray-600 mb-4">
+        <h2 className="text-[80px] font-regular font-dm text-black">Освіта</h2>
+        <p className="text-[20px] font-regular font-inter text-black mt-[50px] w-[550px]">
           Освітній процес – це обмін досвідом за допомогою сучасних технологій.
           Кожен слухач має постійний он-лайн доступ до навчальних матеріалів
           (презентації, відео-контент, тощо), а викладачі є постійними менторами
           з Вами при опрацювання практичних кейсів.{" "}
         </p>
-        <button className="bg-blue-500 text-white px-6 py-2 rounded mb-4 w-fit hover:bg-blue-600 transition">
+        <button className="mt-[25px] px-[31.5px] py-[6px] bg-black hover:bg-blue-700 text-white font-reem transition w-fit">
           ДОКЛАДНІШЕ
         </button>
         <Image
-          src="/image-left.jpg"
-          alt="Картинка слева"
+          src="/assets/Photo.png"
+          alt="psychology"
           width={600}
           height={300}
-          className="w-full h-64 object-cover rounded-lg"
+          className="mt-[50px] w-full h-[222px] object-cover rounded-[20px]"
         />
       </div>
 
@@ -35,20 +38,20 @@ export default function TwoColumnSection() {
       <div className="flex flex-col justify-between">
         <VideoPlayer
           src="/video.mp4"
-          className="w-full h-auto max-h-[250px] rounded-lg"
+          className="w-full h-auto max-h-[486px] rounded-lg"
         />
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
-          <p className="text-gray-600">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4 h-[224px]">
+          <p className="text-[16px] font-medium font-dm text-white bg-[#09234B] text-center p-[20px] rounded-[20px]">
             Освітні програми проходять незалежне експертне рецензування та
             затверджуються Експертною радою Є-П-А та Вченими радами освітніх
             партнерів.{" "}
           </p>
           <Image
-            src="/image-right.jpg"
-            alt="Картинка справа"
+            src="/assets/woman.png"
+            alt="psychology"
             width={300}
-            height={150}
-            className="w-full h-32 object-cover rounded-lg"
+            height={224}
+            className="h-[224px] w-full object-cover rounded-[20px]"
           />
         </div>
       </div>
