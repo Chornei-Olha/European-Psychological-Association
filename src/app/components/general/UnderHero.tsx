@@ -35,11 +35,11 @@ export default function UnderHero() {
           <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-1 text-[15px] font-inter">
             <div className="bg-[#0103B8] p-4 rounded-lg text-center text-white w-[235px] h-[235px]">
               <Image
-                src="/assets/vector2.png"
+                src="/assets/Vector2.png"
                 alt="Logo"
                 width={100}
                 height={100}
-                className="pointer-events-none mb-[20px]"
+                className="pointer-events-none mb-[20px] mx-auto"
               />
               Професійний світ, в якому ніхто не буде відчувати нестачу
               психологічних знань{" "}

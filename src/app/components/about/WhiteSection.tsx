@@ -1,6 +1,6 @@
 export default function WhiteSection() {
   return (
-    <section className="container mx-auto py-16 px-4 text-black text-left">
+    <section className="container py-16 text-black text-left">
       <h2 className="text-[56px] text-black mb-8 font-dm font-medium">
         Необхідність
       </h2>

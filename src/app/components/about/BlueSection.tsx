@@ -6,7 +6,7 @@ export default function BlueSection() {
   return (
     <>
       <section className="pb-[50px]">
-        <div className="bg-[#0103B8] mx-[20px] py-12 px-4 rounded-[20px]">
+        <div className="bg-[#0103B8] mx-[20px] py-12 rounded-[20px]">
           <div className="flex items-center justify-between mt-[48px]">
             <h2 className="text-[56px] font-inter font-regular text-white ml-[100px]">
               Бачення
