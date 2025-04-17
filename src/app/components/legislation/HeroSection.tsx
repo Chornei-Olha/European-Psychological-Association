@@ -9,11 +9,11 @@ export default function HeroSection() {
         alt="Right Logo"
         width={106}
         height={218}
-        className="absolute top-1/8 right-0 transform pointer-events-none z-0"
+        className="absolute top-1/9 right-0 transform pointer-events-none z-0  opacity-90 md:opacity-100"
       />
 
       {/* Контент */}
-      <div className="text-left space-y-6 md:space-y-8 max-w-[1241px] px-4 md:px-0 mx-auto z-10">
+      <div className="text-left space-y-6 md:space-y-8 max-w-full md:max-w-[1241px] px-4 md:px-0 mx-auto z-10">
         <h1 className="text-[36px] md:text-[79px] font-semibold font-inter text-[rgba(255,255,255,0.37)] leading-tight">
           ЗАКОНОДАВСТВО ТА
           <br />

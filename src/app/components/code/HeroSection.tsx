@@ -9,7 +9,7 @@ export default function HeroSection() {
         alt="Left Logo"
         width={100}
         height={200}
-        className="absolute bottom-4 left-0 pointer-events-none hidden md:block"
+        className="absolute bottom-4 left-0 pointer-events-none hidden md:block  opacity-40 md:opacity-100"
       />
 
       <div className="w-full max-w-[1241px] mx-auto text-left text-black">
