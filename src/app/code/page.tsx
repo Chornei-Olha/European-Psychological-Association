@@ -1,6 +1,6 @@
 import HeroSection from "../components/code/HeroSection";
 import Footer from "@/app/components/general/Footer";
-import SmallHeader from "../components/SmallHeader";
+import SmallHeader from "../components/general/SmallHeader";
 
 export default function Home() {
   return (

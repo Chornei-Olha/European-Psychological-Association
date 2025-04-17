@@ -1,7 +1,7 @@
 import Questions from "@/app/components/questions/Questions";
 import Rules from "@/app/components/questions/Rules";
 import Footer from "@/app/components/general/Footer";
-import SmallHeader from "../components/SmallHeader";
+import SmallHeader from "../components/general/SmallHeader";
 
 export default function Home() {
   return (

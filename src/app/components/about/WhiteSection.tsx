@@ -1,6 +1,6 @@
 export default function WhiteSection() {
   return (
-    <section className="container py-16 text-black text-left">
+    <section className=" relative mx-auto text-left space-y-8 z-10 py-16 text-black max-w-[1241px]">
       <h2 className="text-[56px] text-black mb-8 font-dm font-medium">
         Необхідність
       </h2>

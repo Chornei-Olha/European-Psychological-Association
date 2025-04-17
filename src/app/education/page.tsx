@@ -1,7 +1,7 @@
 import HeroSection from "../components/education/HeroSection";
 import EducationSection from "../components/education/EducationSection";
 import Footer from "@/app/components/general/Footer";
-import SmallHeader from "../components/SmallHeader";
+import SmallHeader from "../components/general/SmallHeader";
 
 export default function Home() {
   return (

@@ -3,7 +3,7 @@ import HeroSection from "@/app/components/about/HeroSection";
 import WhiteSection from "@/app/components/about/WhiteSection";
 import BlueSection from "../components/about/BlueSection";
 import Footer from "@/app/components/general/Footer";
-import SmallHeader from "../components/SmallHeader";
+import SmallHeader from "../components/general/SmallHeader";
 
 export default function Home() {
   return (
