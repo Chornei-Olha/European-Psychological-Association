@@ -12,7 +12,7 @@ export default function SmallHeader() {
     <>
       {/* Сам хедер */}
       <header className="bg-[#0103B8] w-full text-white z-50 fixed top-0 left-0 h-[60px]">
-        <div className="container mx-auto px-4 h-full flex items-center justify-between">
+        <div className="container mx-auto px-4 h-full flex items-center justify-between max-w-[1241px]">
           {/* Логотип */}
           <Link href="/">
             <Image

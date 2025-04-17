@@ -13,16 +13,14 @@ export default function HeroSection() {
       />
 
       {/* Контент */}
-      <div className="text-left space-y-8">
-        <h1 className="pl-[100px] text-[79px] font-semibold font-inter text-[rgba(255,255,255,0.37)]">
+      <div className="text-left space-y-8 max-w-[1241px] mx-auto">
+        <h1 className="text-[79px] font-semibold font-inter text-[rgba(255,255,255,0.37)]">
           ЗАКОНОДАВСТВО ТА
           <br />
           СПІВРОБІТНИЦТВО{" "}
         </h1>
-        <h2 className="pl-[100px] text-[56px] font-regular font-inter">
-          Нормативна база
-        </h2>
-        <div className=" pl-[100px] text-[20px] font-regular font-inter leading-loose">
+        <h2 className="text-[56px] font-regular font-inter">Нормативна база</h2>
+        <div className="text-[20px] font-regular font-inter leading-loose">
           <ol>
             Охорони психічного здоров’я:
             <li>1. Закон №12030 «Про систему охорони психічного здоров’я».</li>

@@ -2,7 +2,7 @@ export default function WhiteSection() {
   return (
     <section className="bg-[#D5E5FF] px-[100px] pt-0 pb-[50px] flex justify-end w-full relative text-white overflow-hidden mx-4 md:mx-0">
       {/* <section className="container bg-[#D5E5FF] mx-auto py-16 px-4 text-black text-left"> */}
-      <div className="container mx-auto py-16 px-4 text-black text-left">
+      <div className="container mx-auto py-16 px-4 text-black text-left max-w-[1241px]">
         {" "}
         <h2 className="text-[56px] text-black mb-[45px] font-inter font-regular">
           Партнери

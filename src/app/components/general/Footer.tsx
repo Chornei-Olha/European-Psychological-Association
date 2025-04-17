@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Footer() {
   return (
     <footer className="relative bg-[#0103B8] w-full text-center overflow-hidden">
-      <div className="container mx-auto p-[70px]">
+      <div className="container mx-auto py-[70px] max-w-[1241px]">
         <div className="flex justify-between text-white">
           {/* Ліва частина з текстом */}
           <div className="flex flex-col space-y-2">
