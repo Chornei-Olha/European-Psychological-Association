@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Questions() {
   return (
-    <section className="relative w-full ml-auto mr-auto h-[500px] flex justify-center pt-[50px] text-center text-white">
+    <section className="relative w-full ml-auto mr-auto h-[650px] flex justify-center pt-[150px] text-center text-white">
       {/* Фоновое изображение */}
       <div>
         <Image

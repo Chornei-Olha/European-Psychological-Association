@@ -2,14 +2,14 @@ import Image from "next/image";
 
 export default function HeroSection() {
   return (
-    <section className="bg-[#0103B8] pt-0 pb-[50px] flex justify-end w-full relative text-white overflow-hidden md:mx-0">
+    <section className="bg-[#0103B8] pt-[100px] pb-[50px] flex justify-end w-full relative text-white overflow-hidden md:mx-0">
       {/* Лого */}
       <Image
         src="/assets/vectorL.png"
         alt="Left Logo"
         width={106}
         height={212}
-        className="absolute bottom-1/8 transform -translate-y-1/2 pointer-events-none left-0"
+        className="absolute bottom-1/8 transform -translate-y-1/2 pointer-events-none left-0 z-0"
       />
 
       <Image
@@ -21,7 +21,7 @@ export default function HeroSection() {
       />
 
       {/* Контент */}
-      <div className="mx-auto text-left space-y-8">
+      <div className="relative mx-auto text-left space-y-8 z-10">
         <h1 className="text-[190px] font-semibold font-inter text-[rgba(255,255,255,0.37)]">
           Про нас
         </h1>
