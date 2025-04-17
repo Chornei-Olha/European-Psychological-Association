@@ -1,11 +1,11 @@
 export default function Rules() {
   return (
-    <section className="bg-[#D5E5FF] pt-0 pb-[50px] flex w-full relative text-white overflow-hidden">
-      <div className="text-left space-y-8">
-        <h2 className="pt-[60px] pl-[77px] text-[56px] font-medium font-dm text-black">
+    <section className="bg-[#D5E5FF] pt-0 pb-[50px] flex w-full relative overflow-hidden">
+      <div className=" mx-auto text-left space-y-8 max-w-[1241px] ">
+        <h2 className="pt-[60px] text-[56px] font-medium font-dm text-black">
           Члени мають право:{" "}
         </h2>
-        <div className="pl-[100px] text-[18px] font-medium font-dm leading-loose">
+        <div className="text-[18px] font-medium font-dm leading-loose">
           <ul className="list-disc list-inside text-base space-y-2 text-black">
             <li>
               бути обраними до органів управління та брати участь в діяльності
@@ -30,10 +30,10 @@ export default function Rules() {
             </li>
           </ul>
         </div>
-        <h2 className="pt-[60px] pl-[77px] text-[56px] font-medium font-dm text-black">
+        <h2 className="pt-[60px] text-[56px] font-medium font-dm text-black">
           Члени Є-П-А зобов’язані:
         </h2>
-        <div className=" pl-[100px] text-[18px] font-medium font-dm leading-loose">
+        <div className="text-[18px] font-medium font-dm leading-loose">
           <ul className="list-disc list-inside text-base space-y-2 text-black ">
             <li>дотримуватись положень Статуту Є-П-А;</li>
             <li>виконувати рішення органів управління Є-П-А;</li>
@@ -58,7 +58,7 @@ export default function Rules() {
             <li>брати участь у публічних заходах Є-П-А.</li>
           </ul>
         </div>
-        <p className="pl-[100px] text-[18px] font-medium font-dm text-black">
+        <p className="text-[18px] font-medium font-dm text-black">
           Членський внесок для індивідуальних членів Асоціації розраховується
           щорічно.
         </p>
