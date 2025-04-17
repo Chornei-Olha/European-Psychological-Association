@@ -11,7 +11,7 @@ export default function HeroSection() {
         alt="Right Logo"
         width={106}
         height={218}
-        className="absolute top-1/8 transform pointer-events-none right-0"
+        className="absolute top-[20px] transform pointer-events-none right-0 w-[70px] h-[140px] md:w-[106px] md:h-[218px]"
       />
 
       <div className="container">
@@ -19,12 +19,12 @@ export default function HeroSection() {
           className="bg-cover bg-center text-white flex flex-col items-left justify-center h-[749px] w-full"
           style={{ backgroundImage: "url('/assets/map.png')" }}
         >
-          <h1 className="text-[68px] leading-tight font-bold mb-4 font-prosto">
+          <h1 className="text-[40px] sm:text-[68px] leading-tight font-bold mb-8 font-prosto text-center sm:text-left">
             ЄВРОПЕЙСЬКА
             <br />
             ПСИХОЛОГІЧНА АСОЦІАЦІЯ
           </h1>
-          <p className="text-[18px] text-left max-w-l font-inter mb-[81px]">
+          <p className="text-[14px] sm:text-[18px] text-left max-w-l font-inter mb-[120px]  px-4 sm:px-0">
             На сьогоднішній день відомо, що найбільша потреба суспільства – це
             якісні послуги та освіта, <br /> пов’язана з надбанням знань та
             навиків психологічного консультуванням у різних сферах.
@@ -33,8 +33,8 @@ export default function HeroSection() {
       </div>
 
       {/* Білий фон на всю ширину + container навігації всередині */}
-      <nav className="absolute bottom-[130px] w-full bg-white h-[99px] shadow-md">
-        <div className=" h-full flex justify-center items-center gap-8 text-[18px] font-dm">
+      <nav className="absolute bottom-[100px] sm:bottom-[130px] w-full bg-white h-[150px] md:h-[99px] shadow-md">
+        <div className="h-full flex justify-center items-center gap-4 sm:gap-8 text-[14px] sm:text-[18px] font-dm flex-wrap">
           <Link
             href="/about"
             className="text-black font-semibold hover:underline"
@@ -71,9 +71,11 @@ export default function HeroSection() {
           >
             ЕТИЧНИЙ КОДЕКС
           </Link>
+
+          {/* Скрытие и перемещение ссылки "ЗАКОНОДАВСТВО ТА СПІВРОБІТНИЦТВО" на мобильных */}
           <Link
             href="/legislation"
-            className="text-black font-semibold hover:underline text-center"
+            className="text-black font-semibold hover:underline text-center sm:order-1 order-10"
           >
             ЗАКОНОДАВСТВО ТА СПІВРОБІТНИЦТВО
           </Link>

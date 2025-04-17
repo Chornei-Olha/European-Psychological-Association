@@ -63,18 +63,18 @@ export default function ContactForm() {
 
   return (
     <section className="py-12">
-      <div className="w-[1074px] mx-auto px-4">
-        <h2 className="text-[56px] font-medium font-dm text-center mb-8">
+      <div className="w-full sm:w-[1074px] mx-auto px-4">
+        <h2 className="text-[40px] sm:text-[56px] font-medium font-dm text-center mb-8">
           Залишились питання <br />
           чи пропозиції?
         </h2>
 
         <form
           onSubmit={handleSubmit}
-          className="bg-white shadow-md rounded-xl p-6 grid grid-cols-1 md:grid-cols-2 gap-6"
+          className="bg-white shadow-md rounded-xl p-6 grid grid-cols-1 sm:grid-cols-2 gap-6"
         >
           <div>
-            <label className="block text-[16px] font-bold font-inter mb-2">
+            <label className="block text-[14px] sm:text-[16px] font-bold font-inter mb-2">
               Як Вас звати?
             </label>
             <input
@@ -84,12 +84,12 @@ export default function ContactForm() {
               onChange={handleChange}
               placeholder="Введіть Ваше ім'я"
               required
-              className="w-full border text-[16px] font-regular font-inter border-gray-300 rounded px-4 py-2"
+              className="w-full border text-[14px] sm:text-[16px] font-regular font-inter border-gray-300 rounded px-4 py-2"
             />
           </div>
 
           <div>
-            <label className="block text-[16px] font-bold font-inter mb-2">
+            <label className="block text-[14px] sm:text-[16px] font-bold font-inter mb-2">
               Email
             </label>
             <input
@@ -99,12 +99,12 @@ export default function ContactForm() {
               onChange={handleChange}
               placeholder="Введіть Вашу електронну адресу"
               required
-              className="w-full border text-[16px] font-regular font-inter border-gray-300 rounded px-4 py-2"
+              className="w-full border text-[14px] sm:text-[16px] font-regular font-inter border-gray-300 rounded px-4 py-2"
             />
           </div>
 
-          <div className="md:col-span-2">
-            <label className="block text-[16px] font-bold font-inter mb-2">
+          <div className="sm:col-span-2">
+            <label className="block text-[14px] sm:text-[16px] font-bold font-inter mb-2">
               Коментар
             </label>
             <textarea
@@ -113,11 +113,11 @@ export default function ContactForm() {
               onChange={handleChange}
               placeholder="Текст"
               required
-              className="w-full border text-[16px] font-regular font-inter border-gray-300 rounded px-4 py-2 h-32 resize-none"
+              className="w-full border text-[14px] sm:text-[16px] font-regular font-inter border-gray-300 rounded px-4 py-2 h-32 resize-none"
             />
           </div>
 
-          <div className="md:col-span-2 flex flex-col gap-2 text-sm">
+          <div className="sm:col-span-2 flex flex-col gap-2 text-sm sm:text-[14px]">
             <label className="flex items-start gap-2">
               <input
                 type="checkbox"
@@ -138,11 +138,11 @@ export default function ContactForm() {
             </label>
           </div>
 
-          <div className="md:col-span-2 text-right">
+          <div className="sm:col-span-2 text-right">
             <button
               type="submit"
               disabled={!isValid}
-              className={`px-[40px] py-[10px] font-bold font-inter text-[16px] rounded-3xl ${
+              className={`px-[40px] py-[10px] font-bold font-inter text-[14px] sm:text-[16px] rounded-3xl ${
                 isValid
                   ? "bg-black text-white hover:bg-gray-800"
                   : "bg-gray-400 text-white cursor-not-allowed"
@@ -153,7 +153,7 @@ export default function ContactForm() {
           </div>
 
           {status && (
-            <div className="md:col-span-2 text-center mt-4">
+            <div className="sm:col-span-2 text-center mt-4">
               <p className="text-sm font-semibold">{status}</p>
             </div>
           )}

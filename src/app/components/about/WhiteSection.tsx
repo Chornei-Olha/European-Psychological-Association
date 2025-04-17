@@ -1,11 +1,11 @@
 export default function WhiteSection() {
   return (
-    <section className=" relative mx-auto text-left space-y-8 z-10 py-16 text-black max-w-[1241px]">
-      <h2 className="text-[56px] text-black mb-8 font-dm font-medium">
+    <section className="relative mx-auto text-left space-y-6 sm:space-y-8 z-10 py-10 sm:py-16 text-black max-w-full sm:max-w-[1241px] px-4 sm:px-0">
+      <h2 className="text-[32px] sm:text-[56px] text-black mb-6 sm:mb-8 font-dm font-medium">
         Необхідність
       </h2>
-      <div className="mt-[20px]">
-        <p className="text-[20px] font-inter font-regular text-left">
+      <div className="mt-[10px] sm:mt-[20px]">
+        <p className="text-[16px] sm:text-[20px] font-inter font-regular leading-relaxed sm:leading-normal text-left">
           На сьогоднішній день відомо, що найбільша потреба суспільства – це
           якісні послуги та освіта, пов’язана з надбанням знань та навиків
           психологічного консультуванням у різних сферах.
