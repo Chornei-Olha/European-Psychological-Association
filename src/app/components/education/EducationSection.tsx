@@ -8,23 +8,23 @@ export default function EducationSection() {
       <section className="py-16 px-6">
         <div className="max-w-7xl mx-auto text-[#09234B]">
           {/* Грид: 2 строки, 2 колонки */}
-          <div className="grid grid-cols-1 md:grid-cols-2 grid-rows-2 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 grid-rows-2 gap-6 max-w-[1241px]">
             {/* Верхний ряд, первая колонка */}
             <div>
               <div className="relative rounded-2xl overflow-hidden">
-                <span className="absolute top-4 right-4 bg-white/70 text-[#09234B] text-sm font-medium px-4 py-1 rounded-full">
+                {/* <span className="absolute top-4 right-4 bg-white/70 text-[#09234B] text-sm font-medium px-4 py-1 rounded-full">
                   1 місяць
-                </span>
+                </span> */}
                 <Image
-                  src="/images/edu1.jpg"
+                  src="/assets/Text1.png"
                   alt="Картинка 1"
                   width={600}
                   height={400}
                   className="w-full h-auto object-cover"
                 />
-                <span className="absolute bottom-4 left-4 text-white text-base font-medium">
+                {/* <span className="absolute bottom-4 left-4 text-white text-base font-medium">
                   Інтенсив» – відповідь на виклики життя{" "}
-                </span>
+                </span> */}
               </div>
               <div className="flex gap-4 mt-4">
                 {/* Первый блок */}
@@ -48,19 +48,19 @@ export default function EducationSection() {
             {/* Верхний ряд, вторая колонка */}
             <div>
               <div className="relative rounded-2xl overflow-hidden">
-                <span className="absolute top-4 right-4 bg-white/70 text-[#09234B] text-sm font-medium px-4 py-1 rounded-full">
+                {/* <span className="absolute top-4 right-4 bg-white/70 text-[#09234B] text-sm font-medium px-4 py-1 rounded-full">
                   3 місяці
-                </span>
+                </span> */}
                 <Image
-                  src="/images/edu2.jpg"
+                  src="/assets/Text2.png"
                   alt="Картинка 2"
                   width={600}
                   height={400}
                   className="w-full h-auto object-cover"
                 />
-                <span className="absolute bottom-4 left-4 text-white text-base font-medium">
+                {/* <span className="absolute bottom-4 left-4 text-white text-base font-medium">
                   Активна особистість» – цікаве та прогресивне сьогодення{" "}
-                </span>
+                </span> */}
               </div>
               <div className="flex gap-4 mt-4">
                 {/* Первый блок */}
@@ -84,19 +84,19 @@ export default function EducationSection() {
             {/* Нижний ряд, первая колонка */}
             <div>
               <div className="relative rounded-2xl overflow-hidden">
-                <span className="absolute top-4 right-4 bg-white/70 text-[#09234B] text-sm font-medium px-4 py-1 rounded-full">
+                {/* <span className="absolute top-4 right-4 bg-white/70 text-[#09234B] text-sm font-medium px-4 py-1 rounded-full">
                   10 місяців
-                </span>
+                </span> */}
                 <Image
-                  src="/images/edu3.jpg"
+                  src="/assets/Text3.png"
                   alt="Картинка 3"
                   width={600}
                   height={400}
-                  className="w-full h-auto object-cover"
+                  className="w-full h-[350px] object-cover"
                 />
-                <span className="absolute bottom-4 left-4 text-white text-base font-medium">
+                {/* <span className="absolute bottom-4 left-4 text-white text-base font-medium">
                   Сталий професійний розвиток» – впевнене майбутнє{" "}
-                </span>
+                </span> */}
               </div>
               <div className="flex gap-4 mt-4">
                 {/* Первый блок */}
@@ -119,7 +119,7 @@ export default function EducationSection() {
 
             {/* Нижний ряд, вторая колонка – добавляем новый контент */}
             <div className="flex flex-col justify-between">
-              <div className="space-y-4">
+              <div className="space-y-4 mt-[50px]">
                 {/* Заголовок */}
                 <h3 className="text-2xl font-bold text-left">
                   Структура програм
@@ -131,7 +131,7 @@ export default function EducationSection() {
                   до Вас людей.
                 </p>
                 {/* Кнопка с стрелкой */}
-                <button className="bg-black text-white py-2 px-6 rounded-full mt-4 flex items-center justify-center">
+                <button className="bg-black text-white py-2 px-6 rounded-full mt-[50px] flex items-center justify-center">
                   Реєстрація
                   <span className="ml-2">→</span>
                 </button>
@@ -139,13 +139,13 @@ export default function EducationSection() {
 
               {/* Три блока с текстом */}
               <div className="flex gap-4">
-                <div className="bg-[rgba(57,115,225,0.1)] rounded-4xl py-[20px] flex-1 text-[16px] text-center font-regular font-inter text-[#3665B0]">
+                <div className="bg-[rgba(57,115,225,0.1)] rounded-4xl py-[20px] flex-1 text-[15px] text-center font-regular font-inter text-[#3665B0]">
                   ТРЕНІНГОВІ ПРОГРАМИ{" "}
                 </div>
-                <div className="bg-[rgba(57,115,225,0.1)] rounded-4xl py-[20px] flex-1 text-[16px] text-center font-regular font-inter text-[#3665B0]">
+                <div className="bg-[rgba(57,115,225,0.1)] rounded-4xl py-[20px] flex-1 text-[15px] text-center font-regular font-inter text-[#3665B0]">
                   СЕМІНАРИ{" "}
                 </div>
-                <div className="bg-[rgba(57,115,225,0.1)] rounded-4xl py-[20px] flex-1 text-[16px] text-center font-regular font-inter text-[#3665B0]">
+                <div className="bg-[rgba(57,115,225,0.1)] rounded-4xl py-[20px] flex-1 text-[15px] text-center font-regular font-inter text-[#3665B0]">
                   ВІДЕО КОНТЕНТ{" "}
                 </div>
               </div>
