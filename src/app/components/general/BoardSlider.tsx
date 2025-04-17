@@ -5,7 +5,16 @@ import Image from "next/image";
 import Button from "@/app/components/ui/button";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
-const boardMembers = [
+// Тип для члена правління
+interface BoardMember {
+  id: number;
+  photo: string;
+  name: string;
+  position: string;
+  description: string;
+}
+
+const boardMembers: BoardMember[] = [
   {
     id: 1,
     photo: "/assets/stub.png",
@@ -56,7 +65,8 @@ const boardMembers = [
   },
 ];
 
-const chunkArray = (array: any[], size: number) => {
+// Розбивка по 3
+const chunkArray = (array: BoardMember[], size: number): BoardMember[][] => {
   return Array.from({ length: Math.ceil(array.length / size) }, (_, i) =>
     array.slice(i * size, i * size + size)
   );
@@ -79,7 +89,7 @@ export default function BoardSlider() {
       <h2 className="text-[56px] font-medium font-dm mb-4">Правління ЄПА</h2>
 
       <div className="relative mx-auto max-w-7xl z-10">
-        {/* Стрелка влево */}
+        {/* Стрілка вліво */}
         <Button
           className="absolute left-0 top-1/2 -translate-y-1/2 z-20 ml-4"
           onClick={prevSlide}
@@ -87,7 +97,7 @@ export default function BoardSlider() {
           <ChevronLeft size={24} />
         </Button>
 
-        <div className="flex justify-center pt-[50px] transition-all duration-300 mw-100% gap-1">
+        <div className="flex justify-center pt-[50px] transition-all duration-300 gap-1">
           {slides[page].map((member) => (
             <div
               key={member.id}
@@ -110,7 +120,7 @@ export default function BoardSlider() {
               <p className="font-bold font-inter text-[16px] text-[#09234B] mt-[15px]">
                 {member.position}
               </p>
-              <p className="font-regular font-inter text-[16px] mt-[15px] flex-grow ">
+              <p className="font-regular font-inter text-[16px] mt-[15px] flex-grow">
                 {member.description}
               </p>
               <div className="mt-[20px] flex justify-center">
@@ -122,7 +132,7 @@ export default function BoardSlider() {
           ))}
         </div>
 
-        {/* Стрелка вправо */}
+        {/* Стрілка вправо */}
         <Button
           className="absolute right-0 top-1/2 -translate-y-1/2 z-20 mr-4"
           onClick={nextSlide}
