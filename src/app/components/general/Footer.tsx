@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#0103B8] w-full text-center">
+    <footer className="relative bg-[#0103B8] w-full text-center overflow-hidden">
       <div className="container mx-auto p-[70px]">
         <div className="flex justify-between text-white">
           {/* Ліва частина з текстом */}
@@ -37,6 +37,17 @@ export default function Footer() {
           <p className="text-center text-[16px] font-inter font-regular text-white/50">
             Copyright © ЄПА 2025
           </p>
+        </div>
+
+        <div className="absolute top-0 right-0 transform translate-x-1/5 -translate-y-1/5 pointer-events-none">
+          <Image
+            src="/assets/Vector2.png"
+            alt="ЄПА"
+            width={0}
+            height={0}
+            sizes="100vw"
+            className="w-[10vw] h-auto"
+          />
         </div>
       </div>
     </footer>
