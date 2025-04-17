@@ -37,7 +37,7 @@ export default function TwoColumnSection() {
       {/* Правая колонка */}
       <div className="flex flex-col justify-between">
         <VideoPlayer
-          src="/video.mp4"
+          src="/assets/stub.mp4"
           className="w-full h-auto max-h-[486px] rounded-lg"
         />
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4 h-[224px]">

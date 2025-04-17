@@ -33,7 +33,7 @@ export default function UnderHero() {
 
           {/* Три блока с фоном */}
           <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-1 text-[15px] font-inter">
-            <div className="bg-[#0103B8] p-4 rounded-lg text-center text-white w-[235px] h-[235px]">
+            <div className="bg-[#0103B8] p-4 rounded-lg text-center text-white">
               <Image
                 src="/assets/Vector2.png"
                 alt="Logo"

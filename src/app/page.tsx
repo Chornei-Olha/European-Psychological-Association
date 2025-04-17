@@ -1,4 +1,4 @@
-import Header from "@/app/components/general/Header";
+// import Header from "@/app/components/general/Header";
 import HeroSection from "@/app/components/general/HeroSection";
 import UnderHero from "@/app/components/general/UnderHero";
 import TwoColumnSection from "./components/general/TwoColumnSection";
@@ -12,7 +12,7 @@ import Footer from "@/app/components/general/Footer";
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center bg-bg">
-      <Header />
+      {/* <Header /> */}
       <HeroSection />
       <UnderHero />
       <TwoColumnSection />

@@ -3,7 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 
-export default function Header() {
+export default function HeroSection() {
   return (
     <section className="relative bg-[#0103B8] flex justify-center w-full">
       <Image
@@ -16,7 +16,7 @@ export default function Header() {
 
       <div className="container">
         <div
-          className="bg-[#0103B8] bg-cover bg-center text-white flex flex-col items-left justify-center h-[749px] w-full"
+          className="bg-cover bg-center text-white flex flex-col items-left justify-center h-[749px] w-full"
           style={{ backgroundImage: "url('/assets/map.png')" }}
         >
           <h1 className="text-[68px] leading-tight font-bold mb-4 font-prosto">
@@ -29,57 +29,53 @@ export default function Header() {
             якісні послуги та освіта, <br /> пов’язана з надбанням знань та
             навиків психологічного консультуванням у різних сферах.
           </p>
-          <nav className="absolute left-0 bottom-[130px] text-[18px] font-dm bg-white w-full h-[99px] flex justify-center items-center gap-8 shadow-md">
-            <Link
-              href="/about"
-              className="text-black font-semibold hover:underline"
-            >
-              ПРО НАС
-            </Link>
-            <a href="#" className="text-black font-semibold hover:underline">
-              УПРАВЛІННЯ
-            </a>
-            <Link
-              href="/questions"
-              className="text-black font-semibold hover:underline"
-            >
-              {" "}
-              ЧЛЕНСТВО
-            </Link>
-            <Link
-              href="/education"
-              className="text-black font-semibold hover:underline"
-            >
-              {" "}
-              ОСВІТА
-            </Link>
-            <Link
-              href="/reabilitation"
-              className="text-black font-semibold hover:underline"
-            >
-              ПСИХОЛОГІЧНИЙ
-              <br />
-              РЕАБІЛІТАЦІЙНИЙ ЦЕНТР
-            </Link>
-            <Link
-              href="/code"
-              className="text-black font-semibold hover:underline"
-            >
-              {" "}
-              ЕТИЧНИЙ КОДЕКС
-            </Link>
-            <Link
-              href="/legislation"
-              className="text-black font-semibold hover:underline"
-            >
-              {" "}
-              ЗАКОНОДАВСТВО ТА
-              <br />
-              СПІВРОБІТНИЦТВО
-            </Link>
-          </nav>
         </div>
       </div>
+
+      {/* Білий фон на всю ширину + container навігації всередині */}
+      <nav className="absolute bottom-[130px] w-full bg-white h-[99px] shadow-md">
+        <div className=" h-full flex justify-center items-center gap-8 text-[18px] font-dm">
+          <Link
+            href="/about"
+            className="text-black font-semibold hover:underline"
+          >
+            ПРО НАС
+          </Link>
+          <a href="#board" className="text-black font-semibold hover:underline">
+            УПРАВЛІННЯ
+          </a>
+          <Link
+            href="/questions"
+            className="text-black font-semibold hover:underline"
+          >
+            ЧЛЕНСТВО
+          </Link>
+          <Link
+            href="/education"
+            className="text-black font-semibold hover:underline"
+          >
+            ОСВІТА
+          </Link>
+          <Link
+            href="/reabilitation"
+            className="text-black font-semibold hover:underline text-center"
+          >
+            ПСИХОЛОГІЧНИЙ РЕАБІЛІТАЦІЙНИЙ ЦЕНТР
+          </Link>
+          <Link
+            href="/code"
+            className="text-black font-semibold hover:underline"
+          >
+            ЕТИЧНИЙ КОДЕКС
+          </Link>
+          <Link
+            href="/legislation"
+            className="text-black font-semibold hover:underline text-center"
+          >
+            ЗАКОНОДАВСТВО ТА СПІВРОБІТНИЦТВО
+          </Link>
+        </div>
+      </nav>
     </section>
   );
 }
