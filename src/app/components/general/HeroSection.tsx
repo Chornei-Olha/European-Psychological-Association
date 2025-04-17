@@ -41,9 +41,12 @@ export default function HeroSection() {
           >
             ПРО НАС
           </Link>
-          <a href="#board" className="text-black font-semibold hover:underline">
+          <Link
+            href="#board"
+            className="text-black font-semibold hover:underline"
+          >
             УПРАВЛІННЯ
-          </a>
+          </Link>
           <Link
             href="/questions"
             className="text-black font-semibold hover:underline"
