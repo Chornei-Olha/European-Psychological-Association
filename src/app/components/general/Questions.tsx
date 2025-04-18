@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Questions() {
   return (
@@ -24,9 +25,12 @@ export default function Questions() {
           членів Є-П-А здійснюється на підставі рішення Президента, що
           приймається за результатами розгляду особистої заяви особи.
         </p>
-        <button className="mt-[20px] sm:mt-[25px] px-[20px] sm:px-[31.5px] py-[8px] sm:py-[6px] bg-black hover:bg-blue-700 text-white font-reem transition">
+        <Link
+          href="/questions"
+          className="inline-block mt-[20px] sm:mt-[25px] px-[20px] sm:px-[31.5px] py-[8px] sm:py-[6px] bg-black hover:bg-blue-700 text-white font-reem transition"
+        >
           ДОКЛАДНІШЕ
-        </button>
+        </Link>
       </div>
     </section>
   );

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { ArrowRight } from "lucide-react";
+import Link from "next/link";
 
 export default function UnderHero() {
   return (
@@ -29,9 +30,12 @@ export default function UnderHero() {
             потенційну проблему України – нестачу якісної психологічної освіти,
             науки та практики, що базуються на стандартах Європейського Союзу.
           </p>
-          <button className="mt-6 flex items-center text-[18px] sm:text-[24px] font-inter gap-2 px-6 py-2 sm:px-15 sm:py-3 bg-black hover:bg-blue-700 text-white rounded-[50px] transition">
+          <Link
+            href="/about"
+            className="inline-flex mt-6 items-center text-[18px] sm:text-[24px] font-inter gap-2 px-6 py-2 sm:px-15 sm:py-3 bg-black hover:bg-blue-700 text-white rounded-[50px] transition"
+          >
             ПРО НАС <ArrowRight size={20} />
-          </button>
+          </Link>
 
           {/* Три блока с фоном */}
           <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 text-[14px] sm:text-[15px] font-inter">

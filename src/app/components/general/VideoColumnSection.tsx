@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import dynamic from "next/dynamic";
+import Link from "next/link";
 
 const VideoPlayer = dynamic(
   () => import("@/app/components/general/VideoPlayer"),
@@ -24,9 +25,13 @@ export default function TwoColumnSection() {
           (презентації, відео-контент, тощо), а викладачі є постійними менторами
           з Вами при опрацювання практичних кейсів.
         </p>
-        <button className="mt-[15px] sm:mt-[25px] px-[24px] py-[8px] bg-black hover:bg-blue-700 text-white font-reem transition w-fit">
+        <Link
+          href="/education"
+          className="inline-block mt-[15px] sm:mt-[25px] px-[24px] py-[8px] bg-black hover:bg-blue-700 text-white font-reem transition w-fit"
+        >
           ДОКЛАДНІШЕ
-        </button>
+        </Link>
+
         <Image
           src="/assets/Photo.png"
           alt="psychology"
