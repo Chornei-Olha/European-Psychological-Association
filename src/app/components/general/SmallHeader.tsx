@@ -5,13 +5,19 @@ import Image from "next/image";
 import Link from "next/link";
 import { Menu } from "lucide-react";
 
-export default function SmallHeader() {
+interface SmallHeaderProps {
+  className?: string;
+}
+
+export default function SmallHeader({ className }: SmallHeaderProps) {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
     <>
       {/* Хедер */}
-      <header className="bg-[#0103B8] w-full text-white z-50 fixed top-0 left-0 h-[80px]">
+      <header
+        className={`bg-[#0103B8] w-full text-white z-50 fixed top-0 left-0 h-[80px] ${className}`}
+      >
         <div className="container mx-auto px-4 h-full flex items-center justify-between max-w-[1241px]">
           {/* Логотип */}
           <Link href="/">

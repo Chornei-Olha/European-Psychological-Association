@@ -19,12 +19,12 @@ export default function HeroSection() {
           className="bg-cover bg-center text-white flex flex-col items-left justify-center h-[749px] w-full"
           style={{ backgroundImage: "url('/assets/map.png')" }}
         >
-          <h1 className="text-[40px] sm:text-[68px] leading-tight font-bold mb-8 font-prosto text-center sm:text-left">
+          <h1 className="text-[33px] sm:text-[68px] leading-tight font-bold mb-8 font-prosto text-left px-4 sm:px-0">
             ЄВРОПЕЙСЬКА
             <br />
             ПСИХОЛОГІЧНА АСОЦІАЦІЯ
           </h1>
-          <p className="text-[14px] sm:text-[18px] text-left max-w-l font-inter mb-[120px]  px-4 sm:px-0">
+          <p className="text-[14px] sm:text-[18px] text-left max-w-l font-inter mb-[120px] px-4 sm:px-0">
             На сьогоднішній день відомо, що найбільша потреба суспільства – це
             якісні послуги та освіта, <br /> пов’язана з надбанням знань та
             навиків психологічного консультуванням у різних сферах.
@@ -33,7 +33,7 @@ export default function HeroSection() {
       </div>
 
       {/* Білий фон на всю ширину + container навігації всередині */}
-      <nav className="absolute bottom-[100px] sm:bottom-[130px] w-full bg-white h-[150px] md:h-[99px] shadow-md">
+      <nav className="absolute bottom-[100px] sm:bottom-[130px] w-full bg-white h-[150px] md:h-[99px] shadow-md hidden sm:flex">
         <div className="h-full flex justify-center items-center gap-4 sm:gap-8 text-[14px] sm:text-[18px] font-dm flex-wrap">
           <Link
             href="/about"

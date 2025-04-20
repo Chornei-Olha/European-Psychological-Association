@@ -57,13 +57,13 @@ export default function TypesCabinets() {
 
           {/* Правая часть - список */}
           <div className="flex flex-col  sm:grid-cols-3 gap-4 w-full sm:w-1/2 mt-[50px] sm:mt-[70px]">
-            {items.map(({ id, image, text }) => (
+            {items.map(({ id, text }) => (
               <div
                 key={id}
-                className="border-none rounded-[20px] p-4 flex sm:flex-row flex-col gap-5 sm:gap-5 items-center text-center bg-white shadow"
+                className="border-none rounded-[20px] p-4 flex flex-row gap-2 sm:gap-5 items-center text-left bg-white shadow"
               >
                 <Image
-                  src={image}
+                  src={"/assets/stub.png"}
                   alt={`Іконка ${id}`}
                   width={56}
                   height={56}

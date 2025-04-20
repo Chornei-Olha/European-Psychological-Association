@@ -8,11 +8,12 @@ import VideoColumnSection from "./components/general/VideoColumnSection";
 import TypesCabinets from "./components/general/TypesCabinets";
 import ContactForm from "./components/general/ContactForm";
 import Footer from "@/app/components/general/Footer";
+import SmallHeader from "./components/general/SmallHeader";
 
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center bg-bg">
-      {/* <Header /> */}
+      <SmallHeader className="block md:hidden" />
       <HeroSection />
       <UnderHero />
       <TwoColumnSection />

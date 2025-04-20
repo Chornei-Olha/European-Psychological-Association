@@ -98,7 +98,7 @@ export default function EducationSection() {
                   alt="Картинка 3"
                   width={600}
                   height={400}
-                  className="w-full h-[350px] object-cover"
+                  className="w-full h-[350px] object-contain"
                 />
               </div>
               <div className="flex gap-4 mt-4 flex-col sm:flex-row">
@@ -142,13 +142,13 @@ export default function EducationSection() {
 
               {/* Три блока с текстом */}
               <div className="flex gap-4 mt-4 flex-wrap">
-                <div className="bg-[rgba(57,115,225,0.1)] rounded-4xl py-[20px] flex-1 text-[15px] text-center font-regular font-inter text-[#3665B0]">
+                <div className="bg-[rgba(57,115,225,0.1)] rounded-4xl py-[10px] sm:py-[20px] flex-1 text-[9px] sm:text-[15px] text-center font-regular font-inter text-[#3665B0]">
                   ТРЕНІНГОВІ ПРОГРАМИ{" "}
                 </div>
-                <div className="bg-[rgba(57,115,225,0.1)] rounded-4xl py-[20px] flex-1 text-[15px] text-center font-regular font-inter text-[#3665B0]">
+                <div className="bg-[rgba(57,115,225,0.1)] rounded-4xl py-[10px] sm:py-[20px] flex-1 text-[9px] sm:text-[15px] text-center font-regular font-inter text-[#3665B0]">
                   СЕМІНАРИ{" "}
                 </div>
-                <div className="bg-[rgba(57,115,225,0.1)] rounded-4xl py-[20px] flex-1 text-[15px] text-center font-regular font-inter text-[#3665B0]">
+                <div className="bg-[rgba(57,115,225,0.1)] rounded-4xl py-[10px] sm:py-[20px] flex-1 text-[9px] sm:text-[15px] text-center font-regular font-inter text-[#3665B0]">
                   ВІДЕО КОНТЕНТ{" "}
                 </div>
               </div>

@@ -8,7 +8,7 @@ export default function UnderHero() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch">
         {/* Левая колонка - Картинка */}
         <div className="flex items-center justify-center md:block h-full">
-          <div className="h-full w-auto">
+          <div className="w-full h-auto md:h-full md:w-auto">
             <Image
               src="/assets/Ornament.png"
               alt="Описание изображения"
@@ -32,7 +32,7 @@ export default function UnderHero() {
           </p>
           <Link
             href="/about"
-            className="inline-flex mt-6 items-center text-[18px] sm:text-[24px] font-inter gap-2 px-6 py-2 sm:px-15 sm:py-3 bg-black hover:bg-blue-700 text-white rounded-[50px] transition"
+            className="inline-flex mt-6 items-center text-[13px] sm:text-[24px] font-inter gap-2 px-3 py-1 sm:px-15 sm:py-3 bg-black hover:bg-blue-700 text-white rounded-[50px] transition"
           >
             ПРО НАС <ArrowRight size={20} />
           </Link>
