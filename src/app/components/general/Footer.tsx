@@ -19,8 +19,8 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Логотип справа (в центрі на мобілці) */}
-          <div className="relative w-[50%] mx-auto md:mx-0 md:w-[15vw]">
+          {/* Логотип для десктопов (показывается только на десктопах) */}
+          <div className="relative w-[50%] mx-auto md:mx-0 md:w-[15vw] hidden md:block">
             <Image
               src="/assets/logo.png"
               alt="ЄПА"
@@ -33,23 +33,22 @@ export default function Footer() {
         </div>
 
         {/* Copyright в самому низу */}
-        <div className="mt-8 md:mt-5">
+        <div className="mt-8 md:mt-5 mb-8 md:mb-0">
           <p className="text-center text-[16px] font-inter font-regular text-white/50">
             Copyright © ЄПА 2025
           </p>
         </div>
-
-        {/* Фонове зображення */}
-        <div className="absolute top-0 right-0 transform translate-x-1/5 -translate-y-1/5 pointer-events-none">
-          <Image
-            src="/assets/Vector2.png"
-            alt="ЄПА"
-            width={0}
-            height={0}
-            sizes="100vw"
-            className="w-[20vw] md:w-[10vw] h-auto"
-          />
-        </div>
+      </div>
+      {/* Логотип для мобильных устройств (показывается только на мобильных) */}
+      <div className="absolute text-left w-[40%] bottom-[20px] pt-[20px] block md:hidden">
+        <Image
+          src="/assets/logo.png"
+          alt="ЄПА"
+          width={0}
+          height={0}
+          sizes="(max-width: 768px) 50vw, 15vw"
+          className="w-full h-auto"
+        />
       </div>
     </footer>
   );
