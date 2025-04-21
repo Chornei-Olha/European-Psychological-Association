@@ -34,7 +34,7 @@ export default function HeroSection() {
 
       {/* Білий фон на всю ширину + container навігації всередині */}
       <nav className="absolute bottom-[100px] sm:bottom-[130px] w-full bg-white h-[150px] md:h-[99px] shadow-md hidden sm:flex">
-        <div className="h-full flex justify-center items-center gap-4 sm:gap-8 text-[14px] sm:text-[18px] font-dm flex-wrap">
+        <div className="container m-auto h-full flex justify-center items-center gap-4 sm:gap-8 text-[14px] sm:text-[18px] font-dm flex-wrap">
           <Link
             href="/about"
             className="text-black font-semibold hover:underline"

@@ -1,138 +1,180 @@
 "use client";
 
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Autoplay } from "swiper/modules";
-import type { Swiper as SwiperType } from "swiper";
+import { Swiper as SwiperType } from "swiper";
+import { Autoplay } from "swiper/modules";
 import Image from "next/image";
 import Button from "@/app/components/ui/button";
-import { ChevronLeft, ChevronRight } from "lucide-react";
 
 import "swiper/css";
-import "swiper/css/navigation";
 
 const boardMembers = [
   {
     id: 1,
-    photo: "/images/member1.jpg",
-    name: "ПРІБ ГЛІБ АНАТОЛІЙОВИЧ",
-    position: "Президент",
-    description:
-      "Доктор медичних наук, професор. Проректор з наукової роботи Академії праці, соціальних відносин і туризму...",
+    photo: "/assets/stub.png",
+    name: "фахівець",
+    position: "спеціаліст",
+    description: ` `,
   },
   {
     id: 2,
-    photo: "/images/member2.jpg",
-    name: "ЕГЕЗА ЛЮДМИЛА ЄВГЕНІВНА",
-    position: "Віце-президент",
-    description:
-      "Доктор психологічних наук, професор. Завідувач кафедри психології Академії праці...",
+    photo: "/assets/stub.png",
+    name: "фахівець",
+    position: "спеціаліст",
+    description: ` `,
   },
   {
     id: 3,
-    photo: "/images/member3.jpg",
-    name: "БОНДАР СВІТЛАНА СЕРГІЇВНА",
-    position: "Член правління",
-    description:
-      "Доктор філософії у галузі знань 05 «Соціальні та поведінкові науки». Доцент кафедри психології...",
+    photo: "/assets/stub.png",
+    name: "фахівець",
+    position: "спеціаліст",
+    description: ` `,
   },
   {
     id: 4,
-    photo: "/images/member2.jpg",
-    name: "ЕГЕЗА ЛЮДМИЛА ЄВГЕНІВНА",
-    position: "Віце-президент",
-    description:
-      "Доктор психологічних наук, професор. Завідувач кафедри психології Академії праці...",
-  },
-  {
-    id: 5,
-    photo: "/images/member3.jpg",
-    name: "БОНДАР СВІТЛАНА СЕРГІЇВНА",
-    position: "Член правління",
-    description:
-      "Доктор філософії у галузі знань 05 «Соціальні та поведінкові науки». Доцент кафедри психології...",
+    photo: "/assets/stub.png",
+    name: "фахівець",
+    position: "спеціаліст",
+    description: ` `,
   },
 ];
 
 export default function BoardSlider() {
-  const prevRef = useRef<HTMLButtonElement | null>(null);
-  const nextRef = useRef<HTMLButtonElement | null>(null);
+  const swiperRef = useRef<SwiperType | null>(null);
+  const [selectedMember, setSelectedMember] = useState<
+    null | (typeof boardMembers)[0]
+  >(null);
 
   return (
-    <div className="w-full text-center relative py-12 px-4 sm:px-6 lg:px-8 overflow-hidden">
+    <div className="w-full text-center relative py-12">
       <h2 className="text-[36px] sm:text-[48px] md:text-[56px] font-medium font-dm mb-8">
         Фахівці
       </h2>
 
       <div className="relative max-w-7xl mx-auto">
         {/* Стрелки (десктоп) */}
-        <div className="hidden sm:block">
-          <div className="absolute -left-16 top-1/2 -translate-y-1/2 z-20">
-            <button ref={prevRef}>
-              <ChevronLeft size={24} />
-            </button>
-          </div>
-          <div className="absolute -right-16 top-1/2 -translate-y-1/2 z-20">
-            <button ref={nextRef}>
-              <ChevronRight size={24} />
-            </button>
-          </div>
-        </div>
+        <button
+          onClick={() => swiperRef.current?.slidePrev()}
+          className="hidden sm:flex absolute -left-16 top-1/2 -translate-y-1/2 z-20 bg-white rounded-full shadow p-2 hover:bg-gray-100 transition"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="w-6 h-6 text-gray-600"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M15 19l-7-7 7-7"
+            />
+          </svg>
+        </button>
+
+        <button
+          onClick={() => swiperRef.current?.slideNext()}
+          className="hidden sm:flex absolute -right-16 top-1/2 -translate-y-1/2 z-20 bg-white rounded-full shadow p-2 hover:bg-gray-100 transition"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="w-6 h-6 text-gray-600"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M9 5l7 7-7 7"
+            />
+          </svg>
+        </button>
 
         {/* Стрелки (мобилка) */}
         <div className="flex justify-center gap-4 sm:hidden mb-4">
-          <button ref={prevRef}>
-            <ChevronLeft size={20} />
+          <button
+            onClick={() => swiperRef.current?.slidePrev()}
+            className="bg-white rounded-full shadow p-2 hover:bg-gray-100 transition"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="w-5 h-5 text-gray-600"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M15 19l-7-7 7-7"
+              />
+            </svg>
           </button>
-          <button ref={nextRef}>
-            <ChevronRight size={20} />
+          <button
+            onClick={() => swiperRef.current?.slideNext()}
+            className="bg-white rounded-full shadow p-2 hover:bg-gray-100 transition"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="w-5 h-5 text-gray-600"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M9 5l7 7-7 7"
+              />
+            </svg>
           </button>
         </div>
 
         <Swiper
-          modules={[Navigation, Autoplay]}
-          spaceBetween={24}
-          slidesPerView={1}
+          onSwiper={(swiper) => (swiperRef.current = swiper)}
+          modules={[Autoplay]}
           autoplay={{ delay: 5000 }}
-          navigation={{
-            prevEl: prevRef.current,
-            nextEl: nextRef.current,
-          }}
-          onBeforeInit={(swiper: SwiperType) => {
-            // @ts-expect-error: Refs are null on first render, assigned later
-            swiper.params.navigation.prevEl = prevRef.current;
-            // @ts-expect-error: Refs are null on first render, assigned later
-            swiper.params.navigation.nextEl = nextRef.current;
-          }}
+          spaceBetween={24}
           breakpoints={{
-            640: {
-              slidesPerView: 2,
-            },
-            1024: {
-              slidesPerView: 3,
-            },
+            320: { slidesPerView: 1 },
+            640: { slidesPerView: 2 },
+            1024: { slidesPerView: 3 },
           }}
         >
           {boardMembers.map((member) => (
             <SwiperSlide key={member.id}>
               <div className="h-full flex flex-col p-4 border rounded-xl shadow-md bg-white min-h-[580px]">
-                <Image
-                  src={member.photo}
-                  alt={member.name}
-                  width={300}
-                  height={160}
-                  className="w-full h-60 object-cover rounded-lg mb-2"
-                  priority
-                />
+                <div className="relative mb-2">
+                  <Image
+                    src={member.photo}
+                    alt={member.name}
+                    width={300}
+                    height={160}
+                    className="w-full h-60 object-cover rounded-lg"
+                    priority
+                  />
+                </div>
                 <h3 className="font-bold font-dm text-[20px]">{member.name}</h3>
                 <p className="font-bold font-inter text-[16px] text-[#09234B] mt-[15px]">
                   {member.position}
                 </p>
-                <p className="font-regular font-inter text-[16px] mt-[15px] flex-grow">
+                <p className="font-regular font-inter text-[16px] mt-[15px] flex-grow line-clamp-3">
                   {member.description}
                 </p>
                 <div className="mt-[20px] flex justify-center">
-                  <Button className="max-w-[180px] px-[40px] py-[10px] font-bold font-inter text-[16px] bg-black text-white rounded-3xl">
+                  <Button
+                    className="max-w-[180px] px-[40px] py-[10px] font-bold font-inter text-[16px] bg-black text-white rounded-3xl"
+                    onClick={() => {
+                      console.log("Click!", member);
+                      setSelectedMember(member);
+                    }}
+                  >
                     Читати далі
                   </Button>
                 </div>
@@ -141,6 +183,27 @@ export default function BoardSlider() {
           ))}
         </Swiper>
       </div>
+
+      {/* Модалка */}
+      {selectedMember && (
+        <div className="fixed inset-0 z-50 bg-black/50 flex items-center justify-center px-4">
+          <div className="bg-white max-w-lg w-full rounded-xl shadow-lg p-6 relative">
+            <button
+              onClick={() => setSelectedMember(null)}
+              className="absolute top-2 right-2 text-gray-500 hover:text-gray-800 text-2xl"
+            >
+              ✕
+            </button>
+            <h3 className="text-xl font-bold mb-2">{selectedMember.name}</h3>
+            <p className="text-md font-semibold text-[#09234B] mb-2">
+              {selectedMember.position}
+            </p>
+            <p className="text-sm text-gray-700 whitespace-pre-line text-left">
+              {selectedMember.description}
+            </p>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
