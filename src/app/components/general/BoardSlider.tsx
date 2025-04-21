@@ -40,7 +40,7 @@ const boardMembers = [
   },
   {
     id: 3,
-    photo: "/assets/stub.png",
+    photo: "/assets/Bondar.jpg",
     name: "БОНДАР СВІТЛАНА СЕРГІЇВНА",
     position: "Член правління",
     badge: "Правління",
@@ -60,7 +60,7 @@ const boardMembers = [
   },
   {
     id: 5,
-    photo: "/assets/stub.png",
+    photo: "/assets/Milutina.jpg",
     name: "МІЛЮТІНА КАТЕРИНА ЛЕОНІДІВНА",
     position: "Голова наглядової ради",
     badge: "Наглядова рада",
@@ -82,7 +82,7 @@ const boardMembers = [
   },
   {
     id: 7,
-    photo: "/assets/stub.png",
+    photo: "/assets/Borec.jpg",
     name: "БОРЕЦЬ ОЛЕСЯ АНАТОЛІЇВНА",
     position: "Член наглядової ради",
     badge: "Наглядова рада",
@@ -209,7 +209,7 @@ export default function BoardSlider() {
                     alt={member.name}
                     width={300}
                     height={160}
-                    className="w-full h-60 object-cover rounded-lg"
+                    className="w-full h-96 object-cover rounded-lg"
                     priority
                   />
                   <div className="absolute bottom-2 right-2 bg-[#0103B8] text-white text-sm font-semibold px-3 py-1 rounded-full shadow-sm">

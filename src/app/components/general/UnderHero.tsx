@@ -8,13 +8,12 @@ export default function UnderHero() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch">
         {/* Левая колонка - Картинка */}
         <div className="flex items-center justify-center md:block h-full">
-          <div className="w-full h-auto md:h-full md:w-auto">
+          <div className="relative w-full h-[300px] sm:h-[400px] md:h-full md:w-auto">
             <Image
               src="/assets/Ornament.png"
-              alt="Описание изображения"
-              width={1000}
-              height={1000}
-              className="h-full w-auto object-contain"
+              alt="foto"
+              fill
+              className="object-contain"
             />
           </div>
         </div>
