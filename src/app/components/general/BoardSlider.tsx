@@ -202,7 +202,7 @@ export default function BoardSlider() {
         >
           {boardMembers.map((member) => (
             <SwiperSlide key={member.id}>
-              <div className="h-full flex flex-col p-4 border rounded-xl shadow-md bg-white min-h-[580px]">
+              <div className="h-full flex flex-col justify-between p-4 border rounded-xl shadow-md bg-white min-h-[620px] max-h-[620px]">
                 <div className="relative mb-2">
                   <Image
                     src={member.photo}
