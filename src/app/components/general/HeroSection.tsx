@@ -33,49 +33,49 @@ export default function HeroSection() {
       </div>
 
       {/* Білий фон на всю ширину + container навігації всередині */}
-      <nav className="absolute bottom-[100px] sm:bottom-[130px] w-full bg-white h-[150px] md:h-[99px] shadow-md hidden sm:flex">
+      <nav className="absolute bottom-[100px] sm:bottom-[130px] w-full bg-white/40 h-[150px] md:h-[99px] shadow-md hidden sm:flex">
         <div className="container m-auto h-full flex justify-center items-center gap-4 sm:gap-8 text-[14px] sm:text-[18px] font-dm flex-wrap">
           <Link
             href="/about"
-            className="text-black font-semibold hover:underline"
+            className="text-white font-semibold hover:underline"
           >
             ПРО НАС
           </Link>
           <Link
-            href="#board"
-            className="text-black font-semibold hover:underline"
+            href="#slider"
+            className="text-white font-semibold hover:underline"
           >
             УПРАВЛІННЯ
           </Link>
           <Link
             href="/questions"
-            className="text-black font-semibold hover:underline"
+            className="text-white font-semibold hover:underline"
           >
             ЧЛЕНСТВО
           </Link>
           <Link
             href="/education"
-            className="text-black font-semibold hover:underline"
+            className="text-white font-semibold hover:underline"
           >
             ОСВІТА
           </Link>
           <Link
             href="/reabilitation"
-            className="text-black font-semibold hover:underline text-center"
+            className="text-white font-semibold hover:underline text-center"
           >
             ПСИХОЛОГІЧНИЙ РЕАБІЛІТАЦІЙНИЙ ЦЕНТР
           </Link>
           <Link
             href="/code"
-            className="text-black font-semibold hover:underline"
+            className="text-white font-semibold hover:underline"
           >
-            ЕТИЧНИЙ КОДЕКС
+            ЕТИКА
           </Link>
 
           {/* Скрытие и перемещение ссылки "ЗАКОНОДАВСТВО ТА СПІВРОБІТНИЦТВО" на мобильных */}
           <Link
             href="/legislation"
-            className="text-black font-semibold hover:underline text-center sm:order-1 order-10"
+            className="text-white font-semibold hover:underline text-center sm:order-1 order-10"
           >
             ЗАКОНОДАВСТВО ТА СПІВРОБІТНИЦТВО
           </Link>

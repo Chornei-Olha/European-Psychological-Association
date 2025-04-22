@@ -15,7 +15,7 @@ export default function HeroSection() {
       <div className="w-full max-w-[1241px] mx-auto text-left text-black">
         <div className="px-2 md:px-0 space-y-4 md:space-y-6">
           <h1 className="text-[32px] md:text-[56px] font-inter font-regular leading-tight break-words">
-            ЕТИЧНИЙ КОДЕКС ПСИХОЛОГА
+            ЕТИКА ПСИХОЛОГА
           </h1>
 
           <h2 className="text-[20px] md:text-[32px] font-inter font-regular break-words">

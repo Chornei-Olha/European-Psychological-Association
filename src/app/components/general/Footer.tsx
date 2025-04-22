@@ -22,7 +22,7 @@ export default function Footer() {
           {/* Логотип для десктопов (показывается только на десктопах) */}
           <div className="relative w-[50%] mx-auto md:mx-0 md:w-[15vw] hidden md:block">
             <Image
-              src="/assets/logo.png"
+              src="/assets/Logo.svg"
               alt="ЄПА"
               width={0}
               height={0}
@@ -42,7 +42,7 @@ export default function Footer() {
       {/* Логотип для мобильных устройств (показывается только на мобильных) */}
       <div className="absolute text-left w-[40%] bottom-[20px] pt-[20px] block md:hidden">
         <Image
-          src="/assets/logo.png"
+          src="/assets/Logo.svg"
           alt="ЄПА"
           width={0}
           height={0}

@@ -22,7 +22,7 @@ export default function HeroSection() {
 
       {/* Контент */}
       <div className="mx-auto text-left space-y-8 max-w-7xl z-10">
-        <h1 className=" font-semibold font-inter text-[rgba(255,255,255,0.37)] md:text-[190px] text-[70px] leading-none">
+        <h1 className=" font-semibold font-inter text-[rgba(255,255,255,0.37)] md:text-[100px] text-[64px] leading-none">
           Освіта
         </h1>
         <h2 className="font-medium pt-[20px] md:text-[56px] text-[28px]">

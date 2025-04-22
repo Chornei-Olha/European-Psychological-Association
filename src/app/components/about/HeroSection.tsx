@@ -22,7 +22,7 @@ export default function HeroSection() {
 
       {/* Контент */}
       <div className="relative mx-auto text-left space-y-6 sm:space-y-8 z-10 max-w-full sm:max-w-[1241px]">
-        <h1 className="text-[64px] sm:text-[190px] font-semibold font-inter text-[rgba(255,255,255,0.37)] leading-none">
+        <h1 className="text-[64px] sm:text-[100px] font-semibold font-inter text-[rgba(255,255,255,0.37)] leading-none">
           Про нас
         </h1>
         <h2 className="text-[28px] sm:text-[56px] font-medium">Навіщо?</h2>
