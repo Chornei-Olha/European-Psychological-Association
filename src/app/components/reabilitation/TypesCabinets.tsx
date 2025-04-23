@@ -22,9 +22,9 @@ export default function TypesCabinets() {
   ];
 
   return (
-    <section className="bg-[#BFD6EC] mt-[150px] py-12 px-4 rounded-[20px]">
+    <section className="bg-[#BFD6EC] mt-[100px] sm:mt-[150px] mx-[15px] sm:mx-0 py-12 px-4 rounded-[20px]">
       <div className="flex flex-col md:flex-row items-start md:items-center justify-between mt-8 md:mt-[32px] ml-0 md:ml-[42px] gap-6 md:gap-0 relative">
-        <h2 className="text-[32px] md:text-[80px] font-dm font-regular leading-tight">
+        <h2 className="text-[32px] md:text-[80px] font-dm font-regular leading-tight text-[#0103B8]">
           ПСИХОЛОГІЧНИЙ <br className="hidden md:block" /> РЕАБІЛІТАЦІЙНИЙ ЦЕНТР
         </h2>
 
@@ -53,15 +53,15 @@ export default function TypesCabinets() {
       <div className="container mx-auto flex flex-col md:flex-row items-start justify-between gap-8 mt-8">
         {/* Левая часть */}
         <div className="flex flex-col w-full md:w-1/2">
-          <p className="text-[16px] md:text-[20px] font-inter font-regular ml-0 md:ml-[42px] mt-4">
+          <p className="text-[16px] md:text-[20px] font-inter font-regular ml-0 md:ml-[42px] mt-4 pb-3">
             Психологічний реабілітаційний центр обладнаний трьома кабінетами, де
             проводиться консультативна, психотерапевтична, корекційна робота з
             клієнтами.
           </p>
           <button className="px-6 py-2 bg-black hover:bg-blue-700 text-white font-reem transition w-fit ml-0 md:ml-[42px] mt-6 mb-6 md:mt-[50px] md:mb-[50px]">
-            ДОКЛАДНІШЕ
+            Реєстрація
           </button>
-          <p className="text-[14px] md:text-[16px] font-reem font-regular ml-0 md:ml-[42px]">
+          <p className="text-[14px] md:text-[16px] font-reem font-regular ml-0 md:ml-[42px] pt-3">
             Психологічний реабілітаційний центр є структурним підрозділом
             Європейської психологічної асоціації, які розміщений на 7 поверху за
             адресом Україна, м. Київ, вул. Глибочицька, будинок 17 (літ.1А),

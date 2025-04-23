@@ -102,7 +102,7 @@ export default function BoardSlider() {
   return (
     <div id="slider1" className="w-full text-center relative py-12">
       <h2 className="text-[36px] sm:text-[48px] md:text-[56px] font-medium font-dm mb-8">
-        Правління ЄПА
+        Правління
       </h2>
 
       <div className="relative max-w-7xl mx-auto">

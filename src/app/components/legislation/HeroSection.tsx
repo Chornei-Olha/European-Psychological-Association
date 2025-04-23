@@ -2,7 +2,10 @@ import Image from "next/image";
 
 export default function HeroSection() {
   return (
-    <section className="bg-[#0103B8] pt-25 sm:pt-[150px] pb-[50px] flex w-full relative text-white overflow-hidden">
+    <section
+      id="baza"
+      className="bg-[#0103B8] pt-25 sm:pt-[150px] pb-[50px] flex w-full relative text-white overflow-hidden"
+    >
       {/* Лого справа */}
       <Image
         src="/assets/vectorR.png"

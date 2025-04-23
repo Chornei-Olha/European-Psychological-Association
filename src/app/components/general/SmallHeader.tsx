@@ -29,6 +29,7 @@ const menuItems: MenuItem[] = [
     subItems: [
       { title: "Правління", href: "/#slider1" },
       { title: "Наглядова рада", href: "/#slider2" },
+      { title: "Експертна рада", href: "/#slider3" },
     ],
   },
   { title: "ЧЛЕНСТВО", href: "/questions" },
@@ -42,7 +43,13 @@ const menuItems: MenuItem[] = [
   },
   { title: "ПСИХОЛОГІЧНИЙ РЕАБІЛІТАЦІЙНИЙ ЦЕНТР", href: "/reabilitation" },
   { title: "ЕТИКА", href: "/code" },
-  { title: "ЗАКОНОДАВСТВО ТА СПІВРОБІТНИЦТВО", href: "/legislation" },
+  {
+    title: "ЗАКОНОДАВСТВО ТА СПІВРОБІТНИЦТВО",
+    subItems: [
+      { title: "Нормативна база", href: "/legislation#baza" },
+      { title: "Партнери", href: "/legislation#partners" },
+    ],
+  },
 ];
 
 export default function SmallHeader({ className }: SmallHeaderProps) {
@@ -61,10 +68,10 @@ export default function SmallHeader({ className }: SmallHeaderProps) {
           className ?? ""
         }`}
       >
-        <div className="container mx-auto h-full flex items-center justify-between max-w-[1240px]">
+        <div className="container mx-auto h-full flex items-center justify-between">
           <Link href="/">
             <Image
-              src="/assets/logoM.png"
+              src="/assets/logoT.svg"
               alt="ЄПА Лого"
               width={120}
               height={40}
@@ -73,40 +80,45 @@ export default function SmallHeader({ className }: SmallHeaderProps) {
           </Link>
 
           {/* Desktop Menu */}
-          <nav className="hidden md:flex space-x-2 items-center ">
-            {/* {menuItems.map((item, idx) => (
-              <div key={idx} className="relative group cursor-pointer">
-                <Link
-                  href={item.href || "#"}
-                  className="flex items-center gap-1 hover:underline text-[12px]"
-                >
-                  {item.title}
-                  <ChevronDown size={13} />
-                </Link>
-              </div>
-            ))} */}
-            {menuItems.map((item, idx) => (
-              <div key={idx} className="relative group cursor-pointer">
-                <div className="flex items-center gap-1 text-[12px] hover:underline">
-                  <Link href={item.href || "#"}>{item.title}</Link>
-                  {item.subItems && <ChevronDown size={13} />}
-                </div>
+          <nav className="hidden md:flex space-x-2 items-center gap-7">
+            {menuItems.map((item, idx) => {
+              const isOpen = expandedIndex === idx;
 
-                {item.subItems && (
-                  <div className="absolute left-0 mt-2 w-48 bg-white text-black rounded-md shadow-lg opacity-0 group-hover:opacity-100 group-hover:visible invisible transition-opacity duration-200 z-50">
-                    {item.subItems.map((subItem, subIdx) => (
-                      <Link
-                        key={subIdx}
-                        href={subItem.href}
-                        className="block px-4 py-2 hover:bg-gray-100 text-sm"
-                      >
-                        {subItem.title}
-                      </Link>
-                    ))}
-                  </div>
-                )}
-              </div>
-            ))}
+              const handleClick = () => {
+                setExpandedIndex(isOpen ? null : idx);
+              };
+
+              return (
+                <div key={idx} className="relative">
+                  <button
+                    onClick={handleClick}
+                    className="flex items-center gap-1 text-[12px] hover:underline"
+                  >
+                    {item.href ? (
+                      <Link href={item.href}>{item.title}</Link>
+                    ) : (
+                      <span>{item.title}</span>
+                    )}
+                    {item.subItems && <ChevronDown size={13} />}
+                  </button>
+
+                  {item.subItems && isOpen && (
+                    <div className="absolute left-0 mt-2 w-52 bg-white text-black rounded-md shadow-lg z-50">
+                      {item.subItems.map((subItem, subIdx) => (
+                        <Link
+                          key={subIdx}
+                          href={subItem.href}
+                          className="block px-4 py-2 text-sm hover:bg-gray-100"
+                          onClick={() => setExpandedIndex(null)}
+                        >
+                          {subItem.title}
+                        </Link>
+                      ))}
+                    </div>
+                  )}
+                </div>
+              );
+            })}
           </nav>
 
           {/* Mobile Burger */}
@@ -132,41 +144,47 @@ export default function SmallHeader({ className }: SmallHeaderProps) {
 
           {menuItems.map((item, index) => (
             <div key={index}>
-              <button
-                className="w-full text-left flex justify-between items-center py-2"
-                onClick={() => toggleItem(index)}
-              >
-                {item.title}
-                <ChevronDown
-                  className={`transform transition-transform ${
-                    expandedIndex === index ? "rotate-180" : ""
-                  }`}
-                />
-              </button>
-              {expandedIndex === index && item.subItems && (
-                <div className="pl-4 py-2 space-y-2">
-                  {item.subItems.map((sub, subIdx) => (
-                    <Link
-                      key={subIdx}
-                      href={sub.href}
-                      className="block hover:underline"
-                      onClick={() => setMenuOpen(false)}
-                    >
-                      {sub.title}
-                    </Link>
-                  ))}
-                </div>
-              )}
-              {expandedIndex === index && !item.subItems && item.href && (
-                <div className="pl-4 py-2">
+              {item.subItems ? (
+                <>
+                  <button
+                    className="w-full text-left flex justify-between items-center py-2"
+                    onClick={() => toggleItem(index)}
+                  >
+                    {item.title}
+                    <ChevronDown
+                      className={`transform transition-transform ${
+                        expandedIndex === index ? "rotate-180" : ""
+                      }`}
+                    />
+                  </button>
+                  {expandedIndex === index && (
+                    <div className="pl-4 py-2 space-y-2">
+                      {item.subItems.map((sub, subIdx) => (
+                        <Link
+                          key={subIdx}
+                          href={sub.href}
+                          className="block hover:underline"
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            setTimeout(() => setMenuOpen(false), 100);
+                          }}
+                        >
+                          {sub.title}
+                        </Link>
+                      ))}
+                    </div>
+                  )}
+                </>
+              ) : (
+                item.href && (
                   <Link
                     href={item.href}
-                    className="block hover:underline"
+                    className="block py-2 hover:underline"
                     onClick={() => setMenuOpen(false)}
                   >
-                    Перейти
+                    {item.title}
                   </Link>
-                </div>
+                )
               )}
             </div>
           ))}

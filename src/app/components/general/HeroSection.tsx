@@ -20,7 +20,7 @@ export default function HeroSection() {
           style={{ backgroundImage: "url('/assets/map.png')" }}
         >
           <Image
-            src="/assets/logo.png"
+            src="/assets/logoT.svg"
             alt="Right Logo"
             width={106}
             height={218}

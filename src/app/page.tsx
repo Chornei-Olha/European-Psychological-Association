@@ -5,6 +5,7 @@ import TwoColumnSection from "./components/general/TwoColumnSection";
 import Questions from "@/app/components/general/Questions";
 import BoardSlider from "@/app/components/general/BoardSlider";
 import BoardSliders from "@/app/components/general/BoardSliders";
+import BoardSlider3 from "@/app/components/general/BoardSlider3";
 import VideoColumnSection from "./components/general/VideoColumnSection";
 // import TypesCabinets from "./components/general/TypesCabinets";
 import ContactForm from "./components/general/ContactForm";
@@ -21,6 +22,7 @@ export default function Home() {
       <Questions />
       <BoardSlider />
       <BoardSliders />
+      <BoardSlider3 />
       <VideoColumnSection />
       {/* <TypesCabinets /> */}
       <ContactForm />
