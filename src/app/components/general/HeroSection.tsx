@@ -49,7 +49,7 @@ export default function HeroSection() {
             ПРО НАС
           </Link>
           <Link
-            href="#slider"
+            href="#slider1"
             className="text-white font-semibold hover:underline"
           >
             УПРАВЛІННЯ
