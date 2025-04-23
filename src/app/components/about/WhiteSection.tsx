@@ -1,7 +1,7 @@
 export default function WhiteSection() {
   return (
     <section className="relative mx-auto text-left space-y-6 sm:space-y-8 z-10 py-10 sm:py-16 text-black max-w-full sm:max-w-[1241px] px-4 sm:px-0">
-      <h2 className="text-[32px] sm:text-[56px] text-black mb-6 sm:mb-8 font-dm font-medium">
+      <h2 className="text-[32px] sm:text-[56px] text-black mb-6 sm:mb-8 font-dm font-regular">
         Необхідність
       </h2>
       <div className="mt-[10px] sm:mt-[20px]">

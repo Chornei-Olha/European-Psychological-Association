@@ -22,7 +22,7 @@ export default function TypesCabinets() {
   ];
 
   return (
-    <section className="bg-[#BFD6EC] mt-[100px] py-12 px-4 rounded-[20px]">
+    <section className="bg-[#BFD6EC] mt-[150px] py-12 px-4 rounded-[20px]">
       <div className="flex flex-col md:flex-row items-start md:items-center justify-between mt-8 md:mt-[32px] ml-0 md:ml-[42px] gap-6 md:gap-0 relative">
         <h2 className="text-[32px] md:text-[80px] font-dm font-regular leading-tight">
           ПСИХОЛОГІЧНИЙ <br className="hidden md:block" /> РЕАБІЛІТАЦІЙНИЙ ЦЕНТР

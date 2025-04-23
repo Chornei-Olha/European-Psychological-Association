@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function HeroSection() {
   return (
-    <section className="bg-[#0103B8] pt-[100px] pb-[50px] flex justify-end w-full relative text-white overflow-hidden px-6">
+    <section className="bg-[#0103B8] pt-[150px] pb-[50px] flex justify-end w-full relative text-white overflow-hidden px-6">
       {/* Лого */}
       <Image
         src="/assets/vectorL.png"
@@ -22,10 +22,10 @@ export default function HeroSection() {
 
       {/* Контент */}
       <div className="mx-auto text-left space-y-8 max-w-7xl z-10">
-        <h1 className=" font-semibold font-inter text-[rgba(255,255,255,0.37)] md:text-[100px] text-[64px] leading-none">
+        <h1 className=" font-regular font-inter text-[rgba(255,255,255,0.37)] md:text-[100px] text-[64px] leading-none">
           Освіта
         </h1>
-        <h2 className="font-medium pt-[20px] md:text-[56px] text-[28px]">
+        <h2 className="font-regular pt-[20px] md:text-[56px] text-[28px]">
           Освітній процес
         </h2>
         <p className="pt-[20px] md:text-[20px] text-[16px] md:pt-[70px]">

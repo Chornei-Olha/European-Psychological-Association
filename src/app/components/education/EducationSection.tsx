@@ -41,7 +41,7 @@ export default function EducationSection() {
                   className="w-full h-auto object-cover"
                 />
               </div>
-              <div className="flex gap-4 mt-4 flex-col sm:flex-row">
+              <div className="flex gap-4 sm:gap-0 mt-4 flex-col sm:flex-row">
                 {/* Первый блок */}
                 <div className="bg-[#F4F4F4] rounded-xl p-2 w-full sm:w-1/2 text-[16px] font-regular font-inter text-[#09234B]">
                   Дозволяє поєднати працю та навчання. Передбачає отримання
@@ -71,7 +71,7 @@ export default function EducationSection() {
                   className="w-full h-auto object-cover"
                 />
               </div>
-              <div className="flex gap-4 mt-4 flex-col sm:flex-row">
+              <div className="flex gap-4 sm:gap-0 mt-4 flex-col sm:flex-row">
                 {/* Первый блок */}
                 <div className="bg-[#F4F4F4] rounded-xl p-2 w-full sm:w-1/2 text-[16px] font-regular font-inter text-[#09234B]">
                   Спрямована на фахівців, які впроваджують у роботу отримані
@@ -101,7 +101,7 @@ export default function EducationSection() {
                   className="w-full h-[350px] object-contain"
                 />
               </div>
-              <div className="flex gap-4 mt-4 flex-col sm:flex-row">
+              <div className="flex gap-4 sm:gap-0 mt-4 flex-col sm:flex-row">
                 {/* Первый блок */}
                 <div className="bg-[#F4F4F4] rounded-xl p-2 w-full sm:w-1/2 text-[16px] font-regular font-inter text-[#09234B]">
                   Уможливлює досягнення нового рівня у діяльності або
@@ -141,7 +141,7 @@ export default function EducationSection() {
               </div>
 
               {/* Три блока с текстом */}
-              <div className="flex gap-4 mt-4 flex-wrap">
+              {/* <div className="flex gap-4 mt-4 flex-wrap">
                 <div className="bg-[rgba(57,115,225,0.1)] rounded-4xl py-[10px] sm:py-[20px] flex-1 text-[9px] sm:text-[15px] text-center font-regular font-inter text-[#3665B0]">
                   ТРЕНІНГОВІ ПРОГРАМИ{" "}
                 </div>
@@ -151,9 +151,37 @@ export default function EducationSection() {
                 <div className="bg-[rgba(57,115,225,0.1)] rounded-4xl py-[10px] sm:py-[20px] flex-1 text-[9px] sm:text-[15px] text-center font-regular font-inter text-[#3665B0]">
                   ВІДЕО КОНТЕНТ{" "}
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
+        </div>
+
+        <h2 className="text-3xl sm:text-[56px] text-black mb-8 mt-8 sm:mt-[87px] font-dm font-medium text-center">
+          Тренінгові програми
+        </h2>
+        <div className="text-base sm:text-[26px] text-black mb-8 font-inter font-600 text-left space-y-4">
+          <p>
+            Тренінговий формат, ґрунтується на ефективних формах опанування
+            знань та інноваційних інструментах, що застосовуються для
+            вдосконалення навичок і формування необхідних умінь. Тренінги
+            забезпечують опанування найкращими практиками та актуальними
+            знаннями у сфері психології. Тренінги відбуваються у формах офлайн
+            та онлайн.
+          </p>
+
+          <h2 className="text-3xl sm:text-[56px] text-black mb-8 mt-8 sm:mt-[87px] font-dm font-medium text-center">
+            Семінари
+          </h2>
+          <p>
+            Семінар орієнтовані на професійну аудиторію, де під час занять
+            учасники обмінюються досвідом та інформацією, покращують
+            кваліфікацію та освоюють нові навички. Участь у семінарах підвищує
+            ефективність слухачів. Семінари з психології управління забезпечують
+            консолідацію професійної спільноти, обміну досвідом та координації
+            взаємодії у бізнесі. Беручи участь у семінарах, слухачі в стислий
+            термін набувають затребуваних навичок. Семінари відбуваються у
+            формах офлайн та онлайн.
+          </p>
         </div>
       </section>
     </div>

@@ -36,18 +36,18 @@ export default function SmallHeader({ className }: SmallHeaderProps) {
     <>
       {/* Header */}
       <header
-        className={`bg-[#0103B8] fixed top-0 left-0 w-full h-[100px] z-50 text-white ${
+        className={`bg-[#0103B8] fixed top-0 left-0 w-full h-[80px] sm:h-[120px] z-50 text-white ${
           className ?? ""
         }`}
       >
         <div className="container mx-auto h-full flex items-center justify-between max-w-[1240px]">
           <Link href="/">
             <Image
-              src="/assets/Logo.svg"
+              src="/assets/logoM.png"
               alt="ЄПА Лого"
               width={120}
               height={40}
-              className="h-auto w-[250px]"
+              className="pl-[15px] sm:pl-0 h-auto w-[150px] sm:w-[250px]"
             />
           </Link>
 

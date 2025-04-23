@@ -12,7 +12,7 @@ import "swiper/css";
 const boardMembers = [
   {
     id: 1,
-    photo: "/assets/stub.png",
+    photo: "/assets/gleb.jpeg",
     name: "ПРІБ ГЛІБ АНАТОЛІЙОВИЧ",
     position: "Президент",
     badge: "Правління",
@@ -26,7 +26,7 @@ const boardMembers = [
   },
   {
     id: 2,
-    photo: "/assets/stub.png",
+    photo: "/assets/begeza.jpeg",
     name: "БЕГЕЗА ЛЮДМИЛА ЄВГЕНІВНА",
     position: "Віце-президент",
     badge: "Правління",
@@ -72,7 +72,7 @@ const boardMembers = [
   },
   {
     id: 6,
-    photo: "/assets/stub.png",
+    photo: "/assets/abdrahimov.jpeg",
     name: "АБДРЯХІМОВ РОСТИСЛАВ АДГАНОВИЧ",
     position: "Член наглядової ради",
     badge: "Наглядова рада",

@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function HeroSection() {
   return (
-    <section className="bg-[#BFD6EC] px-4 pt-16 pb-12 md:px-[100px] md:pt-[100px] md:pb-[50px] flex justify-end w-full relative text-white overflow-hidden">
+    <section className="bg-[#BFD6EC] px-4 pt-16 pb-12 md:px-[100px] md:pt-[150px] md:pb-[50px] flex justify-end w-full relative text-white overflow-hidden">
       {/* Лого — скрыто на мобилках */}
       <Image
         src="/assets/vectorL.png"
@@ -15,7 +15,7 @@ export default function HeroSection() {
       <div className="w-full max-w-[1241px] mx-auto text-left text-black">
         <div className="px-2 md:px-0 space-y-4 md:space-y-6">
           <h1 className="text-[32px] md:text-[56px] font-inter font-regular leading-tight break-words">
-            ЕТИКА ПСИХОЛОГА
+            ЕТИЧНИЙ КОДЕКС ПСИХОЛОГА
           </h1>
 
           <h2 className="text-[20px] md:text-[32px] font-inter font-regular break-words">

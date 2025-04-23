@@ -65,8 +65,7 @@ export default function ContactForm() {
     <section className="py-12">
       <div className="w-full sm:max-w-[1074px] mx-auto px-4">
         <h2 className="text-[40px] sm:text-[56px] font-medium font-dm text-center mb-8">
-          Залишились питання <br />
-          чи пропозиції?
+          Залишились питання чи пропозиції?
         </h2>
 
         <form

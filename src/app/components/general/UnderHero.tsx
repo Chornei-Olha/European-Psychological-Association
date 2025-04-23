@@ -31,7 +31,7 @@ export default function UnderHero() {
           </p>
           <Link
             href="/about"
-            className="inline-flex mt-6 items-center text-[13px] sm:text-[24px] font-inter gap-2 px-3 py-1 sm:px-15 sm:py-3 bg-black hover:bg-blue-700 text-white rounded-[50px] transition"
+            className="inline-flex mt-6 items-center text-[10px] sm:text-[20px] font-inter gap-2 px-3 py-1 sm:px-8 sm:py-1 bg-black hover:bg-blue-700 text-white rounded-[50px] transition"
           >
             ПРО НАС <ArrowRight size={20} />
           </Link>

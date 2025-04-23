@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function HeroSection() {
   return (
-    <section className="bg-[#0103B8] pt-[100px] pb-[50px] flex w-full relative text-white overflow-hidden">
+    <section className="bg-[#0103B8] pt-[150px] pb-[50px] flex w-full relative text-white overflow-hidden">
       {/* Лого справа */}
       <Image
         src="/assets/vectorR.png"
@@ -14,7 +14,7 @@ export default function HeroSection() {
 
       {/* Контент */}
       <div className="text-left space-y-6 md:space-y-8 max-w-full md:max-w-[1241px] px-4 md:px-0 mx-auto z-10">
-        <h1 className="text-[36px] md:text-[100px] font-semibold font-inter text-[rgba(255,255,255,0.37)] leading-tight">
+        <h1 className="text-[36px] md:text-[100px] font-regular font-inter text-[rgba(255,255,255,0.37)] leading-tight">
           ЗАКОНОДАВСТВО ТА
           <br />
           СПІВРОБІТНИЦТВО
@@ -62,7 +62,7 @@ export default function HeroSection() {
             <p className="font-semibold text-white">
               Законодавство, що регулює професійний розвиток:
             </p>
-            <ol className="list-decimal pl-5 space-y-2" start={8}>
+            <ol className="list-decimal pl-5 space-y-2" start={1}>
               <li>
                 Стандарти і рекомендації щодо забезпечення якості в ЄПВО (ESG).
               </li>

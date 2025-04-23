@@ -1,6 +1,6 @@
 export default function TwoColumnSection() {
   return (
-    <section className="container mx-auto py-16 px-4 text-black text-left md:text-center ">
+    <section className="container mx-auto px-4 sm:px-0 py-16 text-black text-left md:text-center ">
       <h2 className="text-[24px] sm:text-[30px] text-black mb-8 font-dm font-semibold">
         Професійний світ, в якому ніхто не буде відчувати нестачу психологічних
         знань
