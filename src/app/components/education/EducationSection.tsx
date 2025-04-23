@@ -189,7 +189,10 @@ export default function EducationSection() {
             </div>
           </div>
 
-          <h2 className="text-3xl sm:text-[56px] text-black mb-8 mt-8 sm:mt-[87px] font-dm font-medium text-center">
+          <h2
+            id="program2"
+            className="text-3xl sm:text-[56px] text-black mb-8 mt-8 sm:mt-[87px] font-dm font-medium text-center"
+          >
             Тренінгові програми
           </h2>
           <div className="text-base sm:text-[26px] text-black mb-8 font-inter font-600 text-left space-y-4">
@@ -202,7 +205,10 @@ export default function EducationSection() {
               та онлайн.
             </p>
 
-            <h2 className="text-3xl sm:text-[56px] text-black mb-8 mt-8 sm:mt-[87px] font-dm font-medium text-center">
+            <h2
+              id="program3"
+              className="text-3xl sm:text-[56px] text-black mb-8 mt-8 sm:mt-[87px] font-dm font-medium text-center"
+            >
               Семінари
             </h2>
             <p>

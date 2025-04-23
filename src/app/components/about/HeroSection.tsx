@@ -2,7 +2,10 @@ import Image from "next/image";
 
 export default function HeroSection() {
   return (
-    <section className="bg-[#0103B8] pt-[100px] sm:pt-[150px] pb-[50px] flex flex-col md:flex-row justify-end w-full relative text-white overflow-hidden md:mx-0 px-4 sm:px-8">
+    <section
+      id="history"
+      className="bg-[#0103B8] pt-[100px] sm:pt-[150px] pb-[50px] flex flex-col md:flex-row justify-end w-full relative text-white overflow-hidden md:mx-0 px-4 sm:px-8"
+    >
       {/* Лого */}
       <Image
         src="/assets/vectorL.png"

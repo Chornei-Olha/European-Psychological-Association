@@ -28,7 +28,10 @@ export default function BlueSection() {
               відкритості знань.
             </p>
 
-            <p className="text-[16px] sm:text-[20px] font-inter font-regular text-black text-left w-fit px-4 py-2 mt-[40px] sm:mt-[80px] border rounded-3xl bg-white">
+            <p
+              id="vision"
+              className="text-[16px] sm:text-[20px] font-inter font-regular text-black text-left w-fit px-4 py-2 mt-[40px] sm:mt-[80px] border rounded-3xl bg-white"
+            >
               Візія
             </p>
 
@@ -37,7 +40,10 @@ export default function BlueSection() {
               психологічних знань
             </p>
 
-            <p className="text-[16px] sm:text-[20px] font-inter font-regular text-black text-left w-fit px-4 py-2 mt-[40px] sm:mt-[80px] border rounded-3xl bg-white">
+            <p
+              id="mision"
+              className="text-[16px] sm:text-[20px] font-inter font-regular text-black text-left w-fit px-4 py-2 mt-[40px] sm:mt-[80px] border rounded-3xl bg-white"
+            >
               Місія
             </p>
 
@@ -64,7 +70,10 @@ export default function BlueSection() {
       </div>
 
       <div className="max-w-[1241px] mx-auto mt-[40px] sm:mt-[80px] px-4 sm:px-0">
-        <p className="text-[16px] sm:text-[20px] font-inter font-regular text-white text-left w-fit px-4 py-2 border rounded-3xl bg-[#0103B8]">
+        <p
+          id="goal"
+          className="text-[16px] sm:text-[20px] font-inter font-regular text-white text-left w-fit px-4 py-2 border rounded-3xl bg-[#0103B8]"
+        >
           Мета
         </p>
 

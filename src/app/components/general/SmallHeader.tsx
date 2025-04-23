@@ -15,10 +15,31 @@ interface SmallHeaderProps {
 }
 
 const menuItems: MenuItem[] = [
-  { title: "ПРО НАС", href: "/about" },
-  { title: "УПРАВЛІННЯ", href: "/#slider" },
+  {
+    title: "ПРО НАС",
+    subItems: [
+      { title: "Історія", href: "/about#history" },
+      { title: "Візія", href: "/about#vision" },
+      { title: "Місія", href: "/about#mission" },
+      { title: "Мета", href: "/about#goal" },
+    ],
+  },
+  {
+    title: "УПРАВЛІННЯ",
+    subItems: [
+      { title: "Правління", href: "/about#slider1" },
+      { title: "Наглядова рада", href: "/about#slider2" },
+    ],
+  },
   { title: "ЧЛЕНСТВО", href: "/questions" },
-  { title: "ОСВІТА", href: "/education" },
+  {
+    title: "ОСВІТА",
+    subItems: [
+      { title: "Сертифікаційні програми", href: "/education#program1" },
+      { title: "Тренінгові програми", href: "/education#program2" },
+      { title: "Семінари", href: "/education#program3" },
+    ],
+  },
   { title: "ПСИХОЛОГІЧНИЙ РЕАБІЛІТАЦІЙНИЙ ЦЕНТР", href: "/reabilitation" },
   { title: "ЕТИКА", href: "/code" },
   { title: "ЗАКОНОДАВСТВО ТА СПІВРОБІТНИЦТВО", href: "/legislation" },
@@ -53,7 +74,7 @@ export default function SmallHeader({ className }: SmallHeaderProps) {
 
           {/* Desktop Menu */}
           <nav className="hidden md:flex space-x-2 items-center ">
-            {menuItems.map((item, idx) => (
+            {/* {menuItems.map((item, idx) => (
               <div key={idx} className="relative group cursor-pointer">
                 <Link
                   href={item.href || "#"}
@@ -62,6 +83,28 @@ export default function SmallHeader({ className }: SmallHeaderProps) {
                   {item.title}
                   <ChevronDown size={13} />
                 </Link>
+              </div>
+            ))} */}
+            {menuItems.map((item, idx) => (
+              <div key={idx} className="relative group cursor-pointer">
+                <div className="flex items-center gap-1 text-[12px] hover:underline">
+                  <Link href={item.href || "#"}>{item.title}</Link>
+                  {item.subItems && <ChevronDown size={13} />}
+                </div>
+
+                {item.subItems && (
+                  <div className="absolute left-0 mt-2 w-48 bg-white text-black rounded-md shadow-lg opacity-0 group-hover:opacity-100 group-hover:visible invisible transition-opacity duration-200 z-50">
+                    {item.subItems.map((subItem, subIdx) => (
+                      <Link
+                        key={subIdx}
+                        href={subItem.href}
+                        className="block px-4 py-2 hover:bg-gray-100 text-sm"
+                      >
+                        {subItem.title}
+                      </Link>
+                    ))}
+                  </div>
+                )}
               </div>
             ))}
           </nav>
