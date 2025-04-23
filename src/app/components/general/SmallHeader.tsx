@@ -27,8 +27,8 @@ const menuItems: MenuItem[] = [
   {
     title: "УПРАВЛІННЯ",
     subItems: [
-      { title: "Правління", href: "/about#slider1" },
-      { title: "Наглядова рада", href: "/about#slider2" },
+      { title: "Правління", href: "/#slider1" },
+      { title: "Наглядова рада", href: "/#slider2" },
     ],
   },
   { title: "ЧЛЕНСТВО", href: "/questions" },
@@ -68,7 +68,7 @@ export default function SmallHeader({ className }: SmallHeaderProps) {
               alt="ЄПА Лого"
               width={120}
               height={40}
-              className="pl-[15px] sm:pl-0 h-auto w-[150px] sm:w-[250px]"
+              className="pl-[15px] sm:pl-0 h-auto w-[150px] sm:w-[200px]"
             />
           </Link>
 
