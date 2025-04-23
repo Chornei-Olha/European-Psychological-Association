@@ -51,15 +51,6 @@ export default function BoardSliders3() {
             </tr>
             <tr>
               <th className="text-[17px] sm:text-[20px] border bg-gray-100 border-gray-300 px-4 py-2 text-left">
-                Бегеза Людмила
-              </th>
-              <th className="border border-gray-300 px-4 py-2 text-left">
-                Доктор психологічних наук, професор, завідувач кафедри
-                психології, Академія праці, соціальних відносин і туризму
-              </th>
-            </tr>
-            <tr>
-              <th className="text-[17px] sm:text-[20px] border bg-gray-100 border-gray-300 px-4 py-2 text-left">
                 Ткаліч Маріанна{" "}
               </th>
               <th className="border border-gray-300 px-4 py-2 text-left">
