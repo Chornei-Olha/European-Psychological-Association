@@ -25,6 +25,17 @@ export default function Questions() {
           членів Є-П-А здійснюється на підставі рішення Президента, що
           приймається за результатами розгляду особистої заяви особи.
         </p>
+
+        <div className="flex justify-center">
+          <a
+            href="https://forms.gle/k9koq1t5o6khWSDG8"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block px-6 py-2 bg-black hover:bg-blue-700 text-white font-reem transition w-fit mt-6 mb-6 md:mt-[50px] md:mb-[50px] text-center"
+          >
+            Приєднатися
+          </a>
+        </div>
       </div>
     </section>
   );

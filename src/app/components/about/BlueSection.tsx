@@ -83,6 +83,16 @@ export default function BlueSection() {
           сфері психології на європейському, національному та міжнародному
           рівнях
         </p>
+        <div className="flex justify-center">
+          <a
+            href="https://drive.google.com/file/d/11aX-MAW0HVE_cg8rgmYBg538B_rl2rkL/view?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block px-6 py-2 bg-black hover:bg-blue-700 text-white font-reem transition w-fit mt-6 mb-6 md:mt-[50px] md:mb-[50px] text-center"
+          >
+            Документи
+          </a>
+        </div>
       </div>
     </section>
   );

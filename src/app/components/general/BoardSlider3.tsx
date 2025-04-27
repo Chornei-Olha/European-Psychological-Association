@@ -9,7 +9,19 @@ export default function BoardSliders3() {
         Експертна рада
       </h2>
 
-      <div className="overflow-x-auto mx-4 sm:mx-0">
+      <div className="flex text-left">
+        {" "}
+        <a
+          href="https://drive.google.com/file/d/16gQZO2WVAr3f-EYF-M7WfZq8AUa2Uykp/view?usp=sharing"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-blue-600 hover:underline text-[17px] sm:text-[20px]"
+        >
+          Положення про Експертну раду Європейської психологічної асоціації
+        </a>
+      </div>
+
+      <div className="overflow-x-auto mt-5 mx-4 sm:mx-0">
         <table className="min-w-full table-auto border-collapse border border-gray-300 text-sm">
           <thead>
             <tr>

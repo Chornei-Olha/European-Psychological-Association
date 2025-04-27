@@ -55,8 +55,11 @@ export default function EducationSection() {
             </p>
           </div>
 
-          <h2 className="text-3xl sm:text-[56px] text-black mb-8 mt-8 sm:mt-[87px] font-dm font-medium text-center">
-            Освітні програми
+          <h2
+            id="program1"
+            className="text-3xl sm:text-[56px] text-black mb-8 mt-8 sm:mt-[87px] font-dm font-medium text-center"
+          >
+            Сертифікаційні програми
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 grid-rows-2 gap-6 max-w-[1241px]">
@@ -182,17 +185,17 @@ export default function EducationSection() {
                   цінностей у Вашій діяльності, що залучатиме та приваблюватиме
                   до Вас людей.
                 </p>
-                <button className="bg-black text-white py-2 px-6 rounded-full mt-[50px] flex items-center justify-center">
+                <button
+                  id="program2"
+                  className="bg-black text-white py-2 px-6 rounded-full mt-[50px] flex items-center justify-center"
+                >
                   Реєстрація <span className="ml-2">→</span>
                 </button>
               </div>
             </div>
           </div>
 
-          <h2
-            id="program2"
-            className="text-3xl sm:text-[56px] text-black mb-8 mt-8 sm:mt-[87px] font-dm font-medium text-center"
-          >
+          <h2 className="text-3xl sm:text-[56px] text-black mb-8 mt-8 sm:mt-[87px] font-dm font-medium text-center">
             Тренінгові програми
           </h2>
           <div className="text-base sm:text-[26px] text-black mb-8 font-inter font-600 text-left space-y-4">
