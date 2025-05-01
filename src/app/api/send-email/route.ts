@@ -19,7 +19,7 @@ export async function POST(request: Request) {
 
     const mailOptions = {
       from: process.env.EMAIL_USER, // Ваша електронна пошта
-      to: "pradocw8053@gmail.com", // Адреса замовника або ваша
+      to: "pribhlib@gmail.com", // Адреса замовника або ваша
       subject: "Нове повідомлення з форми",
       text: `Ім'я: ${name}\nEmail: ${email}\nПовідомлення: ${comment}`,
     };
