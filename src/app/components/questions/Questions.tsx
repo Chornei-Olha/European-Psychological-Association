@@ -36,6 +36,9 @@ export default function Questions() {
             Приєднатися
           </a>
         </div>
+        <p className="text-[16px] md:text-[17px] font-medium font-dm text-black">
+          У 2025 році розмір членського внеску становить 1000 гривень.
+        </p>
       </div>
     </section>
   );

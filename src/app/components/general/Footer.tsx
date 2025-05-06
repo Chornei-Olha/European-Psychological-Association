@@ -13,9 +13,26 @@ export default function Footer() {
               будинок 17 (літ. 1А), офіс 708
             </p>
             <div className="text-[16px] font-inter font-regular pt-[30px] md:pt-[50px]">
-              <p>Phone: +380 123 456 789</p>
-              <p>Email: example@email.com</p>
-              <p>р/р: 12345678901234567890</p>
+              <p>
+                Phone:{" "}
+                <a
+                  href="tel:+380679355699"
+                  className="text-white hover:underline"
+                >
+                  +38(067)93 55 699
+                </a>
+              </p>
+              <p>
+                Email:{" "}
+                <a
+                  href="mailto:pribhlib@gmail.com"
+                  className="text-white hover:underline"
+                >
+                  pribhlib@gmail.com
+                </a>
+              </p>
+
+              {/* <p>р/р: 12345678901234567890</p> */}
             </div>
           </div>
 

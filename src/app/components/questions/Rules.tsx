@@ -62,9 +62,6 @@ export default function Rules() {
           Членський внесок для індивідуальних членів Асоціації розраховується
           щорічно.
         </p>
-        <p className="text-[16px] md:text-[17px] font-medium font-dm text-black">
-          У 2025 році розмір членського внеску становить 1000 гривень.
-        </p>
       </div>
     </section>
   );
