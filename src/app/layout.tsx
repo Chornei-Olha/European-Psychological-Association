@@ -29,12 +29,15 @@ const prostoOne = Prosto_One({
   variable: "--font-prosto",
   display: "swap",
 });
-const SITE_NAME = "EPA";
+const SITE_NAME = "Європейська психологічна асоціація";
 const SITE_DESCRIPTION = "Європейська асоциація психологів";
 
 export const metadata: Metadata = {
-  title: "EPA",
+  title: "Європейська психологічна асоціація",
   description: "Європейська асоциація психологів",
+  icons: {
+    icon: "/assets/favicon.png",
+  },
 };
 
 export default function RootLayout({
@@ -55,6 +58,7 @@ export default function RootLayout({
         <meta property="og:type" content="website" />
         <meta property="og:title" content={SITE_NAME} />
         <meta property="og:description" content={SITE_DESCRIPTION} />
+        <link rel="icon" href="/assets/favicon.png" />
       </Head>
       <body>{children}</body>
     </html>
