@@ -1,12 +1,13 @@
 "use client";
 
-import { useState } from "react";
+import emailjs from "@emailjs/browser";
+import { useState, useEffect } from "react";
 
 export default function ContactForm() {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    comment: "",
+    message: "",
     consentInfo: false,
     consentPolicy: false,
   });
@@ -27,36 +28,77 @@ export default function ContactForm() {
     }));
   };
 
+  useEffect(() => {
+    emailjs.init("achhP-nDveJIR5VOU");
+  }, []);
+
+  // const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+  //   e.preventDefault();
+  //   setStatus("Надсилаємо ваше повідомлення...");
+
+  //   try {
+  //     const response = await fetch("/api/send-email", {
+  //       method: "POST",
+  //       headers: {
+  //         "Content-Type": "application/json",
+  //       },
+  //       body: JSON.stringify(formData),
+  //     });
+
+  //     if (response.ok) {
+  //       setStatus("Повідомлення надіслано!");
+  //       setFormData({
+  //         name: "",
+  //         email: "",
+  //         message: "",
+  //         consentInfo: false,
+  //         consentPolicy: false,
+  //       });
+  //     } else {
+  //       const result = await response.json();
+  //       setStatus(
+  //         result?.message || "Помилка при надсиланні. Спробуйте ще раз."
+  //       );
+  //     }
+  //   } catch (error) {
+  //     console.error("Помилка при надсиланні форми:", error);
+  //     setStatus("Помилка при надсиланні. Спробуйте ще раз.");
+  //   }
+  // };
+
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+
+    if (!isValid) {
+      setStatus("Будь ласка, підтвердіть згоди.");
+      return;
+    }
+
     setStatus("Надсилаємо ваше повідомлення...");
 
     try {
-      const response = await fetch("/api/send-email", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
+      const result = await emailjs.send(
+        "service_cqqge8c",
+        "template_1jp9jup",
+        {
+          name: formData.name,
+          email: formData.email,
+          message: formData.message,
         },
-        body: JSON.stringify(formData),
-      });
+        "rvxuQ4n9szGCWTyHr"
+      );
 
-      if (response.ok) {
-        setStatus("Повідомлення надіслано!");
-        setFormData({
-          name: "",
-          email: "",
-          comment: "",
-          consentInfo: false,
-          consentPolicy: false,
-        });
-      } else {
-        const result = await response.json();
-        setStatus(
-          result?.message || "Помилка при надсиланні. Спробуйте ще раз."
-        );
-      }
+      console.log("SUCCESS!", result.status, result.text);
+      setStatus("Повідомлення надіслано!");
+      setFormData({
+        name: "",
+        email: "",
+        message: "",
+        consentInfo: false,
+        consentPolicy: false,
+      });
     } catch (error) {
-      console.error("Помилка при надсиланні форми:", error);
+      console.error("FAILED...", error);
       setStatus("Помилка при надсиланні. Спробуйте ще раз.");
     }
   };
@@ -107,8 +149,8 @@ export default function ContactForm() {
               Коментар
             </label>
             <textarea
-              name="comment"
-              value={formData.comment}
+              name="message"
+              value={formData.message}
               onChange={handleChange}
               placeholder="Текст"
               required
