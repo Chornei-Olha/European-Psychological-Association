@@ -15,7 +15,7 @@ const boardMembers = [
     photo: "/assets/gleb.jpeg",
     name: "ПРІБ ГЛІБ АНАТОЛІЙОВИЧ",
     position: "Президент",
-    badge: "Правління",
+    // badge: "Правління",
     description: `Доктор медичних наук, професор.\n
     Проректор з наукової роботи Академії праці, соціальних відносин і туризму.\n
     Автор понад 300 наукових та науково-методичних праць.\n
@@ -29,7 +29,7 @@ const boardMembers = [
     photo: "/assets/begeza.jpeg",
     name: "БЕГЕЗА ЛЮДМИЛА ЄВГЕНІВНА",
     position: "Віце-президент",
-    badge: "Правління",
+    // badge: "Правління",
     description: `Доктор психологічних наук, професор\n
 Завідувач кафедри психології Академії праці, соціальних відносин і туризму.\n
 Автор понад 100 наукових та науково-методичних праць.\n
@@ -43,7 +43,7 @@ const boardMembers = [
     photo: "/assets/Bondar.jpg",
     name: "БОНДАР СВІТЛАНА СЕРГІЇВНА",
     position: "Член правління",
-    badge: "Правління",
+    // badge: "Правління",
     description: `Доктор філософії у галузі знань 05 «Соціальні та поведінкові науки» за спеціальністю 053 «Психологія».\n
 Доцент кафедри психології Академії праці, соціальних відносин і туризму.\n
 Автор 20 наукових та науково-методичних праць у журналах, що індексуються наукометричними базами Scopus та Web of Science, співавтор 2 монографій.`,
@@ -53,7 +53,7 @@ const boardMembers = [
     photo: "/assets/begezao.jpg",
     name: "БЕГЕЗА ОЛЬГА СЕРГІЇВНА",
     position: "Член правління",
-    badge: "Правління",
+    // badge: "Правління",
     description: `Лікар, здобувачка наукового ступеня доктор філософії з спеціальності «Психологія»,\n
 Керівник аспірантського наукового гуртку кафедри психології Академії праці, соціальних відносин і туризму\n
 Автор 10 наукових та науково-методичних праць у журналах, співавтор 2 монографій.`,
@@ -179,9 +179,9 @@ export default function BoardSlider() {
                     className="w-full h-96 object-cover rounded-lg"
                     priority
                   />
-                  <div className="absolute bottom-2 right-2 bg-[#0103B8] text-white text-sm font-semibold px-3 py-1 rounded-full shadow-sm">
+                  {/* <div className="absolute bottom-2 right-2 bg-[#0103B8] text-white text-sm font-semibold px-3 py-1 rounded-full shadow-sm">
                     {member.badge}
-                  </div>
+                  </div> */}
                 </div>
                 <h3 className="font-bold font-dm text-[20px]">{member.name}</h3>
                 <p className="font-bold font-inter text-[16px] text-[#09234B] mt-[15px]">

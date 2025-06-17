@@ -4,7 +4,7 @@ import { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Swiper as SwiperType } from "swiper";
 import { Autoplay } from "swiper/modules";
-import Image from "next/image";
+// import Image from "next/image";
 import Button from "@/app/components/ui/button";
 
 import "swiper/css";
@@ -12,66 +12,44 @@ import "swiper/css";
 const boardMembers = [
   {
     id: 1,
-    photo: "/assets/Milutina.jpg",
-    name: "МІЛЮТІНА КАТЕРИНА ЛЕОНІДІВНА",
-    position: "Голова наглядової ради",
+    // name: "МІЛЮТІНА КАТЕРИНА ЛЕОНІДІВНА",
+    position: "23 квітня 2025 року — Професійне свято — День психолога!",
     // badge: "Наглядова рада",
-    description: `Доктор психологічних наук, професор\n
-Професор кафедри психології Академії праці, соціальних відносин і туризму.\n
-Автор понад 200 наукових та науково-методичних праць.\n
-Провідний тренер Київського інституту раціонально-інтуїтивної психотерапії «Я».\n
-Протягом останніх 10 років проводить та розробляє тренінги особистісного зростання, навчальні тренінги-семінари для психологів, програми для навчання HR-фахівців, викладання, сімейної та індивідуальної психотерапії, навчання.`,
+    description: `Дорогі колеги та любі здобувачі, шановні психологи! Щиро вітаємо вас із професійним святом — Днем психолога! . Цього дня ми вшановуємо вашу щоденну невидиму, але надзвичайно важливу працю — турботу про душевне здоров’я , підтримку в найскладніші миті життя , здатність чути серцем та бачити те, що приховано від очей. Ви — ті, хто тримає баланс, коли світ хиткий, хто надихає шукати відповіді, коли здається, що їх немає. Бажаємо вам натхнення , гармонії , внутрішньої сили , а також вдячності від тих, кому ви допомагаєте. Хай ваша чуйність і мудрість\n
+    https://www.facebook.com/share/p/16ADGVNt2n/`,
   },
   {
     id: 2,
-    photo: "/assets/abdrahimov.jpeg",
-    name: "АБДРЯХІМОВ РОСТИСЛАВ АДГАНОВИЧ",
-    position: "Член наглядової ради",
+    // name: "АБДРЯХІМОВ РОСТИСЛАВ АДГАНОВИЧ",
+    position:
+      "15 травня 2025 року —  Європейська психологічна асоціація стала базою для проведення Міжнародної науково-практичної конференції «Ринок праці: пріоритети та стратегії повоєнної європейської інтеграції»",
     // badge: "Наглядова рада",
-    description: `Доктор медичних наук, «Медична психологія»\n
-Професор кафедри психології Академії праці, соціальних відносин і туризму\n
-Автор понад 60 наукових та науково-методичних праць у журналах, що індексуються наукометричними базами Scopus та Web of Science, співавтор 2 монографій, 3 патентів України на винахід.`,
+    description: `Конференція\n
+    https://www.facebook.com/share/p/1HkpR21iWd/
+`,
   },
   {
     id: 3,
-    photo: "/assets/Borec.jpg",
-    name: "БОРЕЦЬ ОЛЕСЯ АНАТОЛІЇВНА",
-    position: "Член наглядової ради",
+    // name: "БОРЕЦЬ ОЛЕСЯ АНАТОЛІЇВНА",
+    position:
+      "02 червня 2025 року — Європейська психологічна асоціація стала платформою для практичної підготовки майбутніх фахівців у галузі психології.",
     // badge: "Наглядова рада",
-    description: `Доктор філософії у галузі знань 05 «Соціальні та поведінкові науки» за спеціальністю 053 «Психологія».\n
-Доцент кафедри психології Академії праці, соціальних відносин і туризму.\n
-Автор понад 20 наукових та науково-методичних праць у журналах, співавтор 2 монографій.\n
-Гарант освітньо-професійної програми «Психологія» першого (бакалаврського) рівня за спеціальністю 053 «Психологія»`,
-  },
-  {
-    id: 4,
-    photo: "/assets/Goncharenko.jpeg",
-    name: "ГОНЧАРЕНКО НАТАЛЯ МИКОЛАЇВНА",
-    position: "Член наглядової ради",
-    // badge: "Наглядова рада",
-    description: `Проректор з міжнародних зв’язків\n
-Фахівець з міжнародних питань професійної діяльності психолога\n
-Доцент кафедри психології Академії праці, соціальних відносин і туризму.\n
-Експерт Міністерства освіти та науки України з питань якості освіти\n
-Автор понад 20 наукових та науково-методичних праць у журналах, співавтор 2 монографій`,
+    description: `Громадська організація «Європейська психологічна асоціація» стала платформою для практичної підготовки майбутніх фахівців у галузі психології. У межах практики студенти долучилися до практико-навчального тренінгу: «Розвиток емоційного інтелекту фахівця організації», де мали змогу поглибити знання про емоційну саморегуляцію, розвиток емпатії, асертивної комунікації та стресостійкості в умовах професійного середовища. Відкритий семінар з елементами тренінгової роботи на тему «Фінансова тривожність: як впоратися із страхами сучасності» створив умови для дослідження психологічної природт фінансових страхів, допоміг розпізнавати власні патерни тривожного мислення та надав інструменти для зниження тривожності й підвищення фінансової обізнаності. Переддипломна практика стала потужною платформою для набуття практичного досвіду, розвитку фахових компетентностей і зміцнення професійної мотивації. Щиро дякуємо Громадській організації «Європейська психологічна асоціація» та всім залученим фахівцям за партнерство, наставництво та підтримку майбутніх психологів!\n
+    https://www.facebook.com/share/p/16iGzpTxmt/`,
   },
 ];
 
-export default function BoardSliders() {
+export default function News() {
   const swiperRef = useRef<SwiperType | null>(null);
   const [selectedMember, setSelectedMember] = useState<
     null | (typeof boardMembers)[0]
   >(null);
 
   return (
-    <div id="slider2" className="w-full text-center relative py-12">
-      <h2 className="text-[36px] sm:text-[48px] md:text-[56px] font-medium font-dm mb-8">
-        Наглядова рада
-      </h2>
-
+    <div id="slider2" className=" w-full text-center relative py-10">
       <div className="relative max-w-7xl mx-auto">
         {/* Стрелки (десктоп) */}
-        <button
+        {/* <button
           onClick={() => swiperRef.current?.slidePrev()}
           className="hidden sm:flex absolute -left-16 top-1/2 -translate-y-1/2 z-20 bg-white rounded-full shadow p-2 hover:bg-gray-100 transition"
         >
@@ -109,7 +87,7 @@ export default function BoardSliders() {
               d="M9 5l7 7-7 7"
             />
           </svg>
-        </button>
+        </button> */}
 
         {/* Стрелки (мобилка) */}
         <div className="flex justify-center gap-4 sm:hidden mb-4">
@@ -166,30 +144,16 @@ export default function BoardSliders() {
         >
           {boardMembers.map((member) => (
             <SwiperSlide key={member.id}>
-              <div className="h-full flex flex-col justify-between p-4 border rounded-xl shadow-md bg-white min-h-[620px] max-h-[620px]">
-                <div className="relative mb-2">
-                  <Image
-                    src={member.photo}
-                    alt={member.name}
-                    width={300}
-                    height={160}
-                    className="w-full h-96 object-cover rounded-lg"
-                    priority
-                  />
-                  {/* <div className="absolute bottom-2 right-2 bg-[#0103B8] text-white text-sm font-semibold px-3 py-1 rounded-full shadow-sm">
-                    {member.badge}
-                  </div> */}
-                </div>
-                <h3 className="font-bold font-dm text-[20px]">{member.name}</h3>
-                <p className="font-bold font-inter text-[16px] text-[#09234B] mt-[15px]">
+              <div className="h-full flex flex-col justify-between p-4 border rounded-xl shadow-md bg-[orange] min-h-[250px]">
+                <div className="relative"></div>
+                {/* <h3 className="font-bold font-dm text-[20px]">{member.name}</h3> */}
+                <p className="font-bold font-inter text-left text-[16px] text-[#09234B]">
                   {member.position}
                 </p>
-                <p className="font-regular font-inter text-[16px] mt-[15px] flex-grow line-clamp-3">
-                  {member.description}
-                </p>
+
                 <div className="mt-[20px] flex justify-center">
                   <Button
-                    className="max-w-[180px] px-[40px] py-[10px] font-bold font-inter text-[16px] bg-black text-white rounded-3xl"
+                    className="max-w-[150px] px-[20px] py-[5px] font-medium font-inter text-[12px] bg-black text-white rounded-3xl"
                     onClick={() => {
                       console.log("Click!", member);
                       setSelectedMember(member);
@@ -214,7 +178,7 @@ export default function BoardSliders() {
             >
               ✕
             </button>
-            <h3 className="text-xl font-bold mb-2">{selectedMember.name}</h3>
+            {/* <h3 className="text-xl font-bold mb-2">{selectedMember.name}</h3> */}
             <p className="text-md font-semibold text-[#09234B] mb-2">
               {selectedMember.position}
             </p>

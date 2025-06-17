@@ -1,5 +1,6 @@
 // import Header from "@/app/components/general/Header";
 import HeroSection from "@/app/components/general/HeroSection";
+import News from "./components/general/News";
 import UnderHero from "@/app/components/general/UnderHero";
 import TwoColumnSection from "./components/general/TwoColumnSection";
 import Questions from "@/app/components/general/Questions";
@@ -17,6 +18,7 @@ export default function Home() {
     <main className="flex min-h-screen flex-col items-center bg-bg">
       <SmallHeader className="block md:hidden" />
       <HeroSection />
+      <News />
       <UnderHero />
       <TwoColumnSection />
       <Questions />

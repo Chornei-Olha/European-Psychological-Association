@@ -50,6 +50,13 @@ const menuItems: MenuItem[] = [
       { title: "Партнери", href: "/legislation#partners" },
     ],
   },
+  {
+    title: "КОНТЕНТ",
+    subItems: [
+      { title: "Тексти", href: "/content#text" },
+      { title: "Відео", href: "/content#video" },
+    ],
+  },
 ];
 
 export default function SmallHeader({ className }: SmallHeaderProps) {
@@ -64,7 +71,7 @@ export default function SmallHeader({ className }: SmallHeaderProps) {
     <>
       {/* Header */}
       <header
-        className={`bg-[#0103B8] fixed top-0 left-0 w-full h-[80px] sm:h-[120px] z-50 text-white ${
+        className={`bg-[#0103B8] fixed top-0 left-0 w-full h-[80px] sm:h-[120px] z-40 text-white ${
           className ?? ""
         }`}
       >

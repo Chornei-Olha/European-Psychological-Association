@@ -1,10 +1,10 @@
-import Image from "next/image";
+// import Image from "next/image";
 
 export default function Questions() {
   return (
-    <section className="relative w-full ml-auto mr-auto h-[650px] flex justify-center pt-[150px] text-center text-white max-[768px]:pt-[100px] min-[769px]:min-h-screen max-[768px]:h-[600px]">
+    <section className="bg-[#D5E5FF] relative w-full ml-auto mr-auto flex justify-center pt-[150px] text-center text-white max-[768px]:pt-[100px]">
       {/* Фоновое изображение */}
-      <div className="absolute inset-0 z-0">
+      {/* <div className="absolute inset-0 z-0">
         <Image
           src="/assets/back.png"
           alt="Background"
@@ -13,7 +13,7 @@ export default function Questions() {
           quality={100}
           className="object-cover"
         />
-      </div>
+      </div> */}
 
       {/* Контент */}
       <div className="relative z-10 max-w-7xl px-6 max-[768px]:px-4">

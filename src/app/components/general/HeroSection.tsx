@@ -86,6 +86,12 @@ export default function HeroSection() {
           >
             ЗАКОНОДАВСТВО ТА СПІВРОБІТНИЦТВО
           </Link>
+          <Link
+            href="/content"
+            className="text-white font-semibold hover:underline text-center sm:order-1 order-10"
+          >
+            КОНТЕНТ
+          </Link>
         </div>
       </nav>
     </section>

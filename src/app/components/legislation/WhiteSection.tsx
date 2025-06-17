@@ -9,7 +9,20 @@ export default function WhiteSection() {
           Партнери
         </h2>
 
-        <div className="w-full h-[200px] md:w-[1241px] md:h-[313px] mb-[30px] md:mb-[45px] bg-[rgba(57,115,225,0.18)] rounded-4xl"></div>
+        <div className="w-full h-[200px] md:w-[1241px] px-10 py-10 md:h-[313px] mb-[30px] md:mb-[45px] bg-[rgba(57,115,225,0.18)] rounded-4xl">
+          <h3 className="font-bold pb-2">ОСВІТНІ</h3>
+          <p>
+            ✔️ Академії праці, соціальних відносин і туризму.
+            <br />
+            ✔️ Східноукраїнський національний університет імені Володимира Даля
+            <br />
+            ✔️ Навчально-наукового Інституту психології та соціальних наук
+            Міжрегіональної Академії управління персоналом.
+            <br />
+            ✔️ Навчально-науковий гуманітарний інститут Таврійського
+            національного університету імені В.І. Вернадського.
+          </p>
+        </div>
 
         <p className="text-[20px] md:text-[33px] font-inter font-regular text-left text-[rgba(0,0,0,0.18)]">
           Документ

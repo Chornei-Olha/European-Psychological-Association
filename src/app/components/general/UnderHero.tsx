@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function UnderHero() {
   return (
-    <section className="container mx-auto mt-[60px] sm:mt-[100px] px-4 sm:px-0">
+    <section className="container mx-auto mt-[60px] sm:mt-10 px-4 sm:px-0">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch">
         {/* Левая колонка - Картинка */}
         <div className="flex items-center justify-center md:block h-full">
