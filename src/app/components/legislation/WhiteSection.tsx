@@ -24,15 +24,15 @@ export default function WhiteSection() {
           </p>
         </div>
 
-        <p className="text-[20px] md:text-[33px] font-inter font-regular text-left text-[rgba(0,0,0,0.18)]">
+        {/* <p className="text-[20px] md:text-[33px] font-inter font-regular text-left text-[rgba(0,0,0,0.18)]">
           Документ
-        </p>
-        <p className="text-[20px] md:text-[33px] font-inter font-regular text-left text-[rgba(0,0,0,0.18)]">
+        </p> */}
+        {/* <p className="text-[20px] md:text-[33px] font-inter font-regular text-left text-[rgba(0,0,0,0.18)]">
           Політика конфіденційності
-        </p>
-        <p className="text-[20px] md:text-[33px] font-inter font-regular text-left text-[rgba(0,0,0,0.18)] mb-[30px] md:mb-[45px]">
+        </p> */}
+        {/* <p className="text-[20px] md:text-[33px] font-inter font-regular text-left text-[rgba(0,0,0,0.18)] mb-[30px] md:mb-[45px]">
           Заява шаблон
-        </p>
+        </p> */}
       </div>
     </section>
   );

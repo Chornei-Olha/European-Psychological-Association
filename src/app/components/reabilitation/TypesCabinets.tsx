@@ -46,7 +46,7 @@ export default function TypesCabinets() {
             клієнтами.
           </p>
           <a
-            href="https://forms.gle/yzcFrVAxVBg7NrDD7"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSfj9lM6FVGmHZjFcc8U84DsTykSj63VITSrTLaFcqIV-56MnQ/viewform?usp=send_form"
             target="_blank"
             rel="noopener noreferrer"
           >

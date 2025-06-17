@@ -1,11 +1,11 @@
-import Image from "next/image";
+// import Image from "next/image";
 import Link from "next/link";
 
 export default function Questions() {
   return (
-    <section className="container relative w-full h-[600px] flex justify-center pt-[50px] sm:pt-[80px] text-center text-white">
+    <section className="container relative w-full h-[450px] flex justify-center pt-[50px] sm:pt-[80px] bg-[#bcd8ee] rounded-4xl text-center text-white">
       {/* Фоновое изображение */}
-      <div className="absolute inset-0 w-full h-full rounded-[20px] overflow-hidden">
+      {/* <div className="absolute inset-0 w-full h-full rounded-[20px] overflow-hidden">
         <Image
           src="/assets/back.png"
           alt="Background"
@@ -13,7 +13,7 @@ export default function Questions() {
           objectFit="cover"
           quality={100}
         />
-      </div>
+      </div> */}
 
       {/* Контент */}
       <div className="relative z-10 max-w-7xl px-6 sm:px-8">
