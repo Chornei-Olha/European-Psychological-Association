@@ -161,7 +161,7 @@ export default function BoardSliders() {
           breakpoints={{
             320: { slidesPerView: 1 },
             640: { slidesPerView: 2 },
-            1024: { slidesPerView: 3 },
+            1024: { slidesPerView: 4 },
           }}
         >
           {boardMembers.map((member) => (
@@ -189,7 +189,7 @@ export default function BoardSliders() {
                 </p>
                 <div className="mt-[20px] flex justify-center">
                   <Button
-                    className="max-w-[180px] px-[40px] py-[10px] font-bold font-inter text-[16px] bg-black text-white rounded-3xl"
+                    className="max-w-[180px] px-[40px] py-[10px] font-bold font-inter text-[16px] bg-black text-white rounded-3xl cursor-pointer"
                     onClick={() => {
                       console.log("Click!", member);
                       setSelectedMember(member);

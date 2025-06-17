@@ -153,7 +153,7 @@ export default function News() {
 
                 <div className="mt-[20px] flex justify-center">
                   <Button
-                    className="max-w-[150px] px-[20px] py-[5px] font-medium font-inter text-[12px] bg-white text-black rounded-3xl"
+                    className="max-w-[150px] px-[20px] py-[5px] font-medium font-inter text-[12px] bg-white text-black rounded-3xl cursor-pointer"
                     onClick={() => {
                       console.log("Click!", member);
                       setSelectedMember(member);
