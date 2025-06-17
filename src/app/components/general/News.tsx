@@ -182,9 +182,16 @@ export default function News() {
             <p className="text-md font-semibold text-[#09234B] mb-2">
               {selectedMember.position}
             </p>
-            <p className="text-sm text-gray-700 whitespace-pre-line text-left">
-              {selectedMember.description}
-            </p>
+            <p
+              className="text-sm text-gray-700 whitespace-pre-line text-left"
+              dangerouslySetInnerHTML={{
+                __html: selectedMember.description.replace(
+                  /(https?:\/\/[^\s]+)/g,
+                  (url) =>
+                    `<a href="${url}" target="_blank" rel="noopener noreferrer" class="text-blue-600 underline">${url}</a>`
+                ),
+              }}
+            ></p>
           </div>
         </div>
       )}
