@@ -144,16 +144,16 @@ export default function News() {
         >
           {boardMembers.map((member) => (
             <SwiperSlide key={member.id}>
-              <div className="h-full flex flex-col justify-between p-4 border rounded-xl shadow-md bg-[orange] min-h-[250px]">
+              <div className="h-full flex flex-col justify-between p-4 border rounded-xl shadow-md bg-[#D5E5FF] min-h-[250px]">
                 <div className="relative"></div>
                 {/* <h3 className="font-bold font-dm text-[20px]">{member.name}</h3> */}
-                <p className="font-bold font-inter text-left text-[16px] text-[#09234B]">
+                <p className="font-medium font-inter text-center text-[16px] text-black">
                   {member.position}
                 </p>
 
                 <div className="mt-[20px] flex justify-center">
                   <Button
-                    className="max-w-[150px] px-[20px] py-[5px] font-medium font-inter text-[12px] bg-black text-white rounded-3xl"
+                    className="max-w-[150px] px-[20px] py-[5px] font-medium font-inter text-[12px] bg-white text-black rounded-3xl"
                     onClick={() => {
                       console.log("Click!", member);
                       setSelectedMember(member);
