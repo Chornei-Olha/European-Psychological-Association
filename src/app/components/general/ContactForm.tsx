@@ -175,7 +175,7 @@ export default function ContactForm() {
                 checked={formData.consentPolicy}
                 onChange={handleChange}
               />
-              Погоджуюсь з політикою конфіденційності ЄПА
+              Погоджуюсь з політикою конфіденційності Є-П-А
             </label>
           </div>
 

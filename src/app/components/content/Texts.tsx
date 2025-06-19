@@ -23,7 +23,11 @@ export default function Texts() {
 
           <div className="text-[12px] md:text-[23px] font-inter font-light leading-relaxed space-y-4 break-words">
             <p>
-              <a href="https://www.researchgate.net/publication/377086727_Mentalne_zdorov'a_osobistosti_ta_organizacii">
+              <a
+                href="https://www.researchgate.net/publication/377086727_Mentalne_zdorov'a_osobistosti_ta_organizacii"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Монографія &quot;Ментальне здоров&apos;я особистості та
                 організації&quot;  Колективна монографія за заг. ред. : Г.А.
                 Пріба, Л.Є. Бегези. – Київ : ТОВ &quot;Типографія АМГ&quot;,
@@ -31,7 +35,11 @@ export default function Texts() {
               </a>
             </p>
             <p>
-              <a href="https://zenodo.org/records/14765840">
+              <a
+                href="https://zenodo.org/records/14765840"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Монографія &quot;Психічне здоров&apos;я та резильєнтність
                 особистості. Колективна монографія. За заг. ред. : Г.А. Пріба,
                 Л.Є. Бегези. Київ : Ф-ОП Гуляєв О.В., 2025. 392 с.

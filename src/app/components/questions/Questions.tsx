@@ -18,12 +18,12 @@ export default function Questions() {
       {/* Контент */}
       <div className="relative z-10 max-w-7xl px-6 max-[768px]:px-4">
         <h1 className="text-[56px] font-dm font-medium text-black max-[768px]:text-[32px] max-[768px]:leading-tight">
-          ЯК СТАТИ ЧЛЕНОМ ЄПА?
+          ЯК СТАТИ ЧЛЕНОМ Є-П-А?
         </h1>
         <p className="mt-[25px] text-[20px] font-inter font-regular text-black max-[768px]:text-[16px] max-[768px]:mt-4">
-          До ЕПА можуть приєднуватися фізичні особи, прийом яких до складу
-          членів Є-П-А здійснюється на підставі рішення Президента, що
-          приймається за результатами розгляду особистої заяви особи.
+          До Є-П-А можуть приєднуватися фізичні особи, прийом яких до складу
+          членів Є-П-А здійснюється на підставі рішення президента, що
+          приймається за результатами розгляду особистої заяви кандидата.
         </p>
 
         <div className="flex justify-center">

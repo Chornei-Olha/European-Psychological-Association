@@ -18,7 +18,7 @@ export default function TypesCabinets() {
     {
       id: 3,
       image: "/assets/Icon.png",
-      text: "Кабінет профорієнтації та профвідбору",
+      text: "Кабінет групової та тренінгової роботи",
     },
   ];
 

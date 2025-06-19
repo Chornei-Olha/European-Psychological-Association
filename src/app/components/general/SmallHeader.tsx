@@ -79,7 +79,7 @@ export default function SmallHeader({ className }: SmallHeaderProps) {
           <Link href="/">
             <Image
               src="/assets/logoT.svg"
-              alt="ЄПА Лого"
+              alt="Є-П-А Лого"
               width={120}
               height={40}
               className="pl-[15px] sm:pl-0 h-auto w-[150px] sm:w-[200px]"
@@ -234,7 +234,7 @@ export default function SmallHeader({ className }: SmallHeaderProps) {
 //           <Link href="/">
 //             <Image
 //               src="/assets/logo.png"
-//               alt="ЄПА Лого"
+//               alt="Є-П-А Лого"
 //               width={100}
 //               height={40}
 //               className="h-auto w-[120px] sm:w-[120px]"

@@ -38,7 +38,7 @@ const boardMembers = [
     name: "БОРЕЦЬ ОЛЕСЯ АНАТОЛІЇВНА",
     position: "Член наглядової ради",
     // badge: "Наглядова рада",
-    description: `Доктор філософії у галузі знань 05 «Соціальні та поведінкові науки» за спеціальністю 053 «Психологія».\n
+    description: `Доктор філософії в галузі знань 05 «Соціальні та поведінкові науки» за спеціальністю 053 «Психологія».\n
 Доцент кафедри психології Академії праці, соціальних відносин і туризму.\n
 Автор понад 20 наукових та науково-методичних праць у журналах, співавтор 2 монографій.\n
 Гарант освітньо-професійної програми «Психологія» першого (бакалаврського) рівня за спеціальністю 053 «Психологія»`,
@@ -166,7 +166,7 @@ export default function BoardSliders() {
         >
           {boardMembers.map((member) => (
             <SwiperSlide key={member.id}>
-              <div className="h-full flex flex-col justify-between p-4 border rounded-xl shadow-md bg-white min-h-[620px] max-h-[620px]">
+              <div className="h-full flex flex-col justify-between p-4 border rounded-xl shadow-md bg-white min-h-[650px] max-h-[650px]">
                 <div className="relative mb-2">
                   <Image
                     src={member.photo}

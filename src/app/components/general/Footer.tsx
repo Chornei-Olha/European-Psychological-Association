@@ -40,7 +40,7 @@ export default function Footer() {
           <div className="relative w-[40%] mx-auto md:mx-0 md:w-[8vw] hidden md:block">
             <Image
               src="/assets/logoMEn.svg"
-              alt="ЄПА"
+              alt="Є-П-А"
               width={0}
               height={0}
               sizes="(max-width: 768px) 50vw, 15vw"
@@ -52,7 +52,7 @@ export default function Footer() {
         {/* Copyright в самому низу */}
         <div className="mt-8 md:mt-5 mb-8 md:mb-0">
           <p className="text-center text-[16px] font-inter font-regular text-white/50">
-            Copyright © ЄПА 2025
+            Copyright © Є-П-А 2025
           </p>
         </div>
       </div>
@@ -60,7 +60,7 @@ export default function Footer() {
       <div className="absolute text-left w-[40%] bottom-[20px] left-[20px] block md:hidden">
         <Image
           src="/assets/logoDEn.svg"
-          alt="ЄПА"
+          alt="Є-П-А"
           width={0}
           height={0}
           sizes="(max-width: 768px) 50vw, 15vw"

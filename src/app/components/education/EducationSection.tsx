@@ -39,18 +39,18 @@ export default function EducationSection() {
         <div className="max-w-7xl mx-auto text-[#09234B]">
           <div className="text-base sm:text-[26px] text-black mb-8 font-inter font-600 text-left space-y-4">
             <p>
-              Розроблені щоб допомогти Вам отримати правильні дорожні карти й
+              Розроблені, щоб допомогти Вам отримати правильні дорожні карти й
               інструменти для створення успішної кар’єри.
             </p>
             <p>
               Заняття допоможуть Вам зосередитися на довготривалому зростанні та
-              створені сталих практик у Вашій діяльності.
+              створенні сталих практик у Вашій діяльності.
             </p>
             <p>
               Якщо Ви шукаєте якісне джерело знань та бажаєте створити цінність,
-              яка буде залучати потрібних Вам людей – сертифікаційні програми це
-              навчання, яке пропонує Вам першокласну освіту та затребувані
-              навички та практичні чек-листи, які Ви можете почати
+              яка буде залучати потрібних Вам людей – Сертифікаційні програми -
+              це навчання, яке пропонує Вам першокласну освіту та затребувані
+              навички та практичні чеклісти, які Ви можете почати
               використовувати одразу.
             </p>
           </div>
@@ -69,7 +69,7 @@ export default function EducationSection() {
                 <p className="font-bold text-xl">
                   Інтенсив - відповідь на виклики життя
                 </p>
-                <p className="font-bold text-lg py-5">1 місяць</p>
+                <p className="font-bold text-lg py-5">2 місяці</p>
                 <p>
                   Дозволяє поєднати працю та навчання. Передбачає отримання
                   базового обсягу компетенцій та навичок у стислий термін. Дає
@@ -79,9 +79,9 @@ export default function EducationSection() {
               </div>
 
               <div className="bg-[#F4F4F4] rounded-xl p-2 font-bold font-inter text-[#09234B] flex flex-col items-center justify-center">
-                <p className="text-[16px] text-center">120 годин</p>
+                <p className="text-[16px] text-center">60 годин</p>
                 <button className="bg-black text-white py-2 px-3 rounded-full mt-4">
-                  4 кредити ECTS
+                  2 кредити ECTS
                 </button>
               </div>
             </div>
@@ -100,9 +100,9 @@ export default function EducationSection() {
               </div>
 
               <div className="bg-[#F4F4F4] rounded-xl p-2 font-bold font-inter text-[#09234B] flex flex-col items-center justify-center">
-                <p className="text-[16px] text-center">240 годин</p>
+                <p className="text-[16px] text-center">90 годин</p>
                 <button className="bg-black text-white py-2 px-3 rounded-full mt-4">
-                  8 кредитів ECTS
+                  3 кредити ECTS
                 </button>
               </div>
             </div>
@@ -113,17 +113,17 @@ export default function EducationSection() {
                 <p className="font-bold text-xl">
                   Сталий професійний розвиток - впевнене майбутнє життя
                 </p>
-                <p className="font-bold text-lg py-5">10 місяців</p>
+                <p className="font-bold text-lg py-5">6 місяців</p>
                 <p>
-                  Уможливлює досягнення нового рівня у діяльності або
+                  Уможливлює досягнення нового рівня в діяльності або
                   започаткування кар&apos;єри «з нуля».
                 </p>
               </div>
 
               <div className="bg-[#F4F4F4] rounded-xl p-2 font-bold font-inter text-[#09234B] flex flex-col items-center justify-center">
-                <p className="text-[16px] text-center">360 годин</p>
+                <p className="text-[16px] text-center">180 годин</p>
                 <button className="bg-black text-white py-2 px-3 rounded-full mt-4">
-                  12 кредитів ECTS
+                  6 кредитів ECTS
                 </button>
               </div>
             </div>
@@ -132,10 +132,10 @@ export default function EducationSection() {
           {/* Доп. инфо блок */}
           <div className="flex flex-col justify-between">
             <div className="space-y-4 mt-[50px]">
-              <h3 className="text-2xl font-bold text-left sm:text-xl">
+              <h3 className="text-2xl font-bold text-center sm:text-xl">
                 Структура програм
               </h3>
-              <p className="text-base font-medium text-left sm:text-sm">
+              <p className="font-medium text-center text-lg">
                 Забезпечує довготривале зростання та сталі практики створення
                 цінностей у Вашій діяльності, що залучатиме та приваблюватиме до
                 Вас людей.
@@ -146,7 +146,7 @@ export default function EducationSection() {
                 rel="noopener noreferrer"
                 id="program2"
               >
-                <button className="bg-black text-white py-2 px-6 rounded-full mt-[50px] flex items-center justify-center">
+                <button className="mx-auto bg-black text-white py-2 px-6 rounded-full mt-[50px] flex items-center justify-center">
                   Реєстрація <span className="ml-2">→</span>
                 </button>
               </a>
@@ -172,12 +172,12 @@ export default function EducationSection() {
               Семінари
             </h2>
             <p>
-              Семінар орієнтовані на професійну аудиторію, де під час занять
+              Семінар орієнтований на професійну аудиторію, де під час занять
               учасники обмінюються досвідом та інформацією, покращують
-              кваліфікацію та освоюють нові навички. Участь у семінарах підвищує
-              ефективність слухачів. Семінари з психології управління
-              забезпечують консолідацію професійної спільноти, обміну досвідом
-              та координації взаємодії у бізнесі. Беручи участь у семінарах,
+              кваліфікацію та опановують нові навички. Участь у семінарах
+              підвищує ефективність слухачів. Семінари з психології управління
+              забезпечують консолідацію професійної спільноти, обмін досвідом та
+              координацію взаємодії в бізнесі. Беручи участь у семінарах,
               слухачі в стислий термін набувають затребуваних навичок. Семінари
               відбуваються у формах офлайн та онлайн.
             </p>
